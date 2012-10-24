@@ -101,4 +101,70 @@ $(document).ready(function() {
 
 });
 
+// gaAddons FREE v1.0, Copyright 2011, Stephane Hamel - http://gaAddons.com
+// Licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+// gaAddons FREE v1.0, Copyright 2011, Stéphane Hamel - http://gaAddons.com
+// gaAddons by Stéphane Hamel is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+// This code is provided as is, without guarantee or support.
+
+jQuery(document).ready(function($) {
+	// _trackDownloads
+	// helper function - allow regex as jQuery selector
+    $.expr[':'].regex = function(e, i, m) {
+        var mP = m[3].split(','),
+            l = /^(data|css):/,
+            a = {
+                method: mP[0].match(l) ? mP[0].split(':')[0] : 'attr',
+                property: mP.shift().replace(l, '')
+            },
+            r = new RegExp(mP.join('').replace(/^\s+|\s+$/g, ''), 'ig');
+        return r.test($(e)[a.method](a.property));
+    };
+
+    $('a:regex(href,"\\.(zip|mp\\d+|mpe*g|pdf|docx*|pptx*|xlsx*|jpe*g|png|gif|tiff*)")$').live('click', function(e) {
+        _gaq.push(['_trackEvent', 'download', 'click', this.href.replace(/^.*\/\//, '')]);
+    });
+	
+	// _trackOutbound
+	$('a[href^="http"]:not([href*="//' + location.host + '"])').live('click', function(e) {
+        _gaq.push(['_trackEvent', 'outbound', 'click', this.href.match(/\/\/([^\/]+)/)[1]]);
+	});
+	// main navigation links
+	$('#navigation  a[href^="/"]').live('click', function(e) {
+		_gaq.push(['_trackEvent', 'navigation', 'click', this.href]);
+	});
+	// secondary navigation links
+	$('#secondary-navigation  a').live('click', function(e) {
+		_gaq.push(['_trackEvent', 'sec-nav', 'click', this.href]);
+	});
+	// hero images
+	$('#hero a').live('click', function(e) {
+		_gaq.push(['_trackEvent', 'Promos', 'click', this.href]);
+	});
+	// homepage controls - next
+	$('#hero-controls a.next').live('click', function(e) {
+		_gaq.push(['_trackEvent', 'hero-controls', 'control', 'next']);
+	});
+	// homepage controls - previous
+	$('#hero-controls a.prev').live('click', function(e) {
+		_gaq.push(['_trackEvent', 'hero-controls', 'control', 'prev']);
+	});
+	// banner controls - previous
+	$('#promotions a.prev').live('click', function(e) {
+		_gaq.push(['_trackEvent', 'banner-controls', 'control', 'next']);
+	});
+	// banner controls - next
+	$('#promotions a.next').live('click', function(e) {
+		_gaq.push(['_trackEvent', 'banner-controls', 'control', 'prev']);
+	});
+	// banners
+	$('li[class*=banner] a').live('click', function(e) {
+		_gaq.push(['_trackEvent', 'Banners', 'click', this.href]);
+	});
+});
+
+// _trackError: track 404 - Page not found
+if (document.title.search(/Page Not Found/i) !== -1) {
+    _gaq.push(['_trackPageview', '/vpv/404/' + location.host + location.pathname + '?from=' + document.referrer]);
+}
 

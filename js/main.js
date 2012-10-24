@@ -123,6 +123,8 @@ var Malone_JS = {
 			$('#sidebar #audience li a[href$="'+path+'"]').parent().addClass('active selected');
 			}
 		}
+		//hide empty submenu divs
+		$('ul').not(':has(li)').parent('.submenu').hide()
 	},
 	
 	initCurrentSection: function () {
@@ -205,6 +207,5 @@ $(document).ready(function() {
 	$('a[rel*=facebox]').facebox() //facebox for email pop-up form
 
 });
-
 
 
