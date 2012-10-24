@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+	<headcode></headcode>
+	<bodycode></bodycode>
+	<footcode></footcode>
+	
+	<!-- com.omniupdate.properties -->
+	<title><!--%echo var='title' --></title>
+	<!-- /com.omniupdate.properties -->
+	
+	<config>
+		<parameter name="pagetype">intro-landing</parameter>
+		<!-- com.omniupdate.properties -->
+		<parameter name="breadcrumb-content" type="text" prompt="Breadcrumb Content"><!--%echo var='title' --></parameter>
+		<parameter name="promo-banner" type="radio" prompt="Enable promo banner">
+			<option value="true" selected="true">On</option>
+			<option value="false" selected="false">Off</option>
+		</parameter>
+		<sidebar-widgets>
+			<parameter name="news-widget" type="select" prompt="News Feed" alt="Select which news feed to use for the sidebar news widget.">
+				<option value="disabled" selected="false">None</option>
+				<option value="nofilter" selected="true">All Feeds</option>
+				<option value="visualarts" selected="false">Visual Arts</option>
+				<option value="instrumentalmusic" selected="false">Instrumental Music</option>
+				<option value="choralvocal" selected="false">Choral/Vocal Music</option>
+				<option value="academics" selected="false">Academics</option>
+				<option value="religion" selected="false">Religion</option>
+				<option value="infomeetings" selected="false">Informational Meetings</option>
+				<option value="infomeetingsgradstudies" selected="false">Informational Meetings -- Graduate Studies</option>
+				<option value="infomeetingsdegree" selected="false">Informational Meetings -- Degree Completion</option>
+				<option value="infomeetingsnursing" selected="false">Informational Meetings -- Nursing Degree Completion</option>
+				<option value="studentlife" selected="false">Student Life</option>
+				<option value="theater" selected="false">Theater</option>
+				<option value="business" selected="false">Business</option>
+				<option value="events" selected="false">Events</option>
+				<option value="bignews" selected="false">Big News</option>
+			</parameter>
+			<parameter name="events-widget" type="select" prompt="Events Feed" alt="Select which calendar feed to use for the sidebar events widget.">
+				<option value="disabled" selected="true">None</option>
+				<option value="012b-1c56546c-000006e0" selected="false">Academics</option>
+				<option value="012a-d3959e15-000000ba" selected="false">BSN</option>
+				<option value="012a-d393043c-000000af" selected="false">Business (Undergraduate)</option>
+				<option value="012b-1c1635e3-000006bd" selected="false">Campus Ministries</option>
+				<option value="012a-d3902829-000000a4" selected="false">Communications</option>
+				<option value="012a-d3943491-000000b3" selected="false">Education (Undergraduate)</option>
+				<option value="012a-d394d622-000000b7" selected="false">Education Workshops</option>
+				<option value="012a-d39203a0-000000ab" selected="false">History, Philosophy and Social Sciences</option>
+				<option value="012a-d3908e3f-000000a5" selected="false">Language and Literature</option>
+				<option value="012a-d394b3fa-000000b6" selected="false">MAED Counseling</option>
+				<option value="012a-d39486ee-000000b4" selected="false">MAED Education</option>
+				<option value="012a-d3940118-000000b2" selected="false">MAOL</option>
+				<option value="012a-d390d7b5-000000a6" selected="false">Mathematics and Computer Science</option>
+				<option value="012a-d39295ca-000000ad" selected="false">MATS (Theology Graduate Program)</option>
+				<option value="012a-d393dea9-000000b1" selected="false">MBA Program</option>
+				<option value="012a-d3939d5a-000000b0" selected="false">Management Program</option>
+				<option value="012a-d395cbea-000000bb" selected="false">MSN (Graduate Program)</option>
+				<option value="012a-d3912670-000000a7" selected="false">Music</option>
+				<option value="012a-d3914676-000000a8" selected="false">Natural Sciences</option>
+				<option value="012a-d3954dd2-000000b9" selected="false">Nursing (Undergraduate)</option>
+				<option value="012a-d3918888-000000a9" selected="false">Psychology</option>
+				<option value="012b-1c15a02a-000006bc" selected="false">Public Events</option>
+				<option value="012a-d392b837-000000ae" selected="false">Social Work</option>
+				<option value="012b-1c1661dd-000006be" selected="false">Student Events</option>
+				<option value="012a-d3924999-000000ac" selected="false">Theology (Undergraduate)</option>
+				<option value="012a-d391c323-000000aa" selected="false">Visual Arts</option>
+			</parameter>
+			<parameter name="twitter-widget" type="select" prompt="Twitter widget">
+				<option value="disabled" selected="true">None</option>
+				<option value="malone_univ" selected="false">Malone University</option>
+				<option value="pioneerdeb" selected="false">pioneerdeb</option>
+			</parameter>
+			<parameter name="twitter-count" type="select" prompt="Twitter count" alt="If twitter widget is enabled, this is the number of twiter posts to display at a time.">
+				<option value="1" selected="false">1</option>
+				<option value="2" selected="false">2</option>
+				<option value="3" selected="false">3</option>
+				<option value="4" selected="true">4</option>
+			</parameter>
+		</sidebar-widgets>	
+		<parameter name="facebook-widget" type="select" prompt="Enable Facebook widget">
+			<option value="disabled" selected="false">Disable</option>
+			<option value="/pages/Malone-University-Admissions/117133195013019" selected="false">Admissions</option>
+			<option value="/pages/Malone-University-Alumni/8555322857" selected="false">Alumni</option>
+			<option value="/malonepioneers" selected="false">Athletics</option>
+			<option value="/pages/Malone-University-Career-Development/105656021061" selected="false">Career Development Center</option>
+			<option value="/mucounseling" selected="false">Dept of Counseling and Human Development</option>
+			<option value="/pages/Malone-University-Department-of-History-Philosophy-and-Social-Sciences/383183667664?ref=ts" selected="false">Dept of History, Philosophy, and Social Sciences</option>
+			<option value="/Malone-University-Department-of-Theology/112570448801982" selected="false">Department of Theology</option>			
+			<option value="/pages/Malone-University-Library/144877622243331" selected="false">Library</option>
+			<option value="/pages/Malone-University/27317928538" selected="true">Malone University</option>
+			<option value="/pages/Malone-University-SAC-Student-Activities-Council/114031788621759" selected="false">Student Activities Council</option>
+			<option value="/pages/Malone-University-Softball/200680029964013" selected="false">Softball</option>
+		</parameter>
+		<!-- /com.omniupdate.properties -->
+	</config>
+	
+	<metadata>
+		<!-- com.omniupdate.properties -->
+		<meta name="keywords" content="<!--%echo var="keywords" -->" />
+		<meta name="description"<!--%echo var="description" -->" />
+		
+		<!-- /com.omniupdate.properties -->
+	</metadata>	
+	
+	<maincontent>
+		<hero>
+			<!-- com.omniupdate.div label="hero" group="secure" button="707" -->
+				<img src="/images/hero/about_hero.jpg" width="694" height="324" alt="About" />
+			<!-- /com.omniupdate.div -->
+		</hero>
+		<page-title>
+			<!-- com.omniupdate.div label="title" group="Everyone" button="707" --><!-- com.omniupdate.editor csspath="/_resources/ou/editor/title.css" width="950" --><h1>Test Audience</h1><!-- /com.omniupdate.div --><!-- broke h1 out for consistency -->
+		</page-title>
+		<interior>
+			<!-- com.omniupdate.div label="content" group="Everyone" button="707" --><!-- com.omniupdate.editor csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/intro.txt" width="950" --><p class="intro narrower">Malone University is a Christian university for the arts, sciences, and professions in the liberal arts tradition, affiliated with the Evangelical Friends Church.</p>
+<p class="narrower">The mission of Malone is to provide students with an education based on biblical faith in order to develop men and women in intellectual maturity, wisdom, and Christian faith who are committed to serving the church, community, and world.</p><!-- /com.omniupdate.div -->
+		</interior>
+		<bullet-list>
+			<!-- com.omniupdate.div label="bulletlist" group="Everyone" button="707" --><!-- com.omniupdate.editor csspath="/_resources/ou/editor/bulletlist.css" cssmenu="/_resources/ou/editor/main.txt" width="950" --><ul>
+<li>
+<h2><a href="#">History</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</li>
+<li>
+<h2><a href="#">Board of Trustees</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</li>
+<li>
+<h2><a href="#">Administration</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</li>
+<li>
+<h2><a href="#">Facts &amp; Figures</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</li>
+<li>
+<h2><a href="#">Doctrinal Statement</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</li>
+<li>
+<h2><a href="#">Affiliation &amp; Membership</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+<ul class="submenu">
+<li><a href="#">Christian College Consortium</a></li>
+<li><a href="#">Council for Christian Colleges and Universities</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<h2><a href="#">Offices &amp; Services</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</li>
+<li>
+<h2><a href="#">Locations &amp; Directions</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+<ul class="submenu">
+<li><a href="#">Campus Map</a></li>
+<li><a href="#">Living in Canton</a></li>
+</ul>
+</li>
+<li>
+<h2><a href="#">Contact Us</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+<ul class="submenu">
+<li><a href="#">Directory</a></li>
+<li><a href="#">Contact Form</a></li>
+</ul>
+</li>
+<li>
+<h2><a href="#">Jobs at Malone University</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>&nbsp;</p>
+</li>
+</ul><!-- /com.omniupdate.div -->
+		</bullet-list>
+		
+		
+		
+	</maincontent>
+	<sidebar>
+		<apply>
+			<!-- com.omniupdate.div label="sidebar-apply" group="Everyone" button="707" -->
+			<!-- com.omniupdate.editor csspath="/_resources/ou/editor/sidebar-apply.css" width="950" -->
+			<a href="#" id="apply">
+				<strong>I'm ready to<br />apply!</strong>
+				Apply Now
+			</a>
+			<!-- /com.omniupdate.div -->
+		</apply>
+	</sidebar>
+</document>

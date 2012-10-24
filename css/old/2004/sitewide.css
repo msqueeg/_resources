@@ -1,0 +1,171 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 1:58:02 Feb 6, 2006 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:45:25 Apr 6, 2011.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+body, div, p, td, input, ol, ul, li, dl, df, dd { 
+	color: #333; 
+	font-size: 12px; 
+	font-family: Arial, Helvetica, sans-serif 
+	}
+pre {
+	font-family: Andale Mono, Monaco, Luxi Mono, monospace;	
+	}
+dd {
+	font-weight: bold;
+	}
+a { 
+	color: #AF7D19; text-decoration: none; font-weight: bold;
+	}
+a:hover { 
+	color: #782828; text-decoration: none;	
+	}
+.Text {
+	color: #333; 
+	font-size: 12px; 
+	}
+.SmallText {
+	color: #333; font-size: 11px; 
+	}
+.PageTitle    { 
+	color: #772222; font-size: 25px; font-weight: bold; 
+	}
+.ChildDepartment { 
+	color: #162D5A; font-size: 20px; font-weight: bold; 
+	}
+.ParentDepartment { 
+	color: #465A78; font-size: 11px; font-weight: bold; 
+	}
+.PageSubTitle { 
+	color: #666666; 
+	font-size: 16px; 
+	font-weight: bold 
+	}
+.Header1 { 
+	color: #142850; 
+	font-size: 15px; 
+	font-weight: bold 
+	}
+.Header2
+	{ 
+	color: #772222; 
+	font-size: 15px; 
+	font-weight: bold 
+	}
+.Header3{ 
+	color: #000000; 
+	font-size: 12px; 
+	font-weight: bold 
+	}
+.Caption { 
+	color: #666666; 
+	font-size: 10px; 
+	font-style: italic;
+	}
+
+.Copyright {color: #fff; display: block; padding: 1px 10px; width: 100%; height: 100% }
+
+/*force h3 tags in athletics stats pages to header style */
+h3, h1 { 
+	color: #142850; 
+	font-size: 15px; 
+	font-weight: bold 
+	}
+
+
+
+
+input      { margin-top: 1px; margin-bottom: 1px; border-width: 1px; border-color: #666 }
+textarea { background-color: #fff; margin-top: 1px; margin-bottom: 1px; border-width: 1px; border-color: #666 }
+/*input:submit   { color: #eee; background-color: #eee; width: 50px; height: 18px }*/
+select     { height: 18px }
+.hotmenu, .menu1  { color: #fff; font-size: 12px; font-weight: bold; line-height: 12px}
+a.topmenu {color: #fff; background-color: transparent; display: block; width: 100%; padding: 5px 10px 4px 10px}
+a.topmenu:hover  { color: #fc0}
+
+a.hotmenu {color: #fff; background-color: transparent; display: block; width: 100%; padding: 2px 10px 4px 10px}
+a.hotmenu:hover  { color: #fc0; background: #162D5A}
+.contentarea {padding: 5px; border-right: 1px solid #62624D; vertical-align: top}
+.linkarea {border-left: 1px solid #62624D; border-right: 1px solid #62624D; vertical-align: top;}
+
+
+.linkarea a { width: 100%; color: #000; background-color: transparent; padding: 0px 2px 0px 5px; font-weight: normal}
+.linkarea a:hover  { color: #fff; background-color: #bba; text-decoration: none}
+
+.linkgroup     { color: #782828; font-weight: bold; padding: 1px 2px; width: 180px; /*border-top: 1px solid #62624D;  border-bottom: 1px solid #62624D; background-color: #d2d2c3*/}
+
+
+#footerlink  { color: #fff; text-align: center }
+#footerlink td a  { color: #fff; display: block; padding: 1px 10px; width: 100%; height: 100% }
+#footerlink td a:hover  { color: #fff; background-color: #465a78; text-decoration:none }
+
+
+/*Light Beige #d2d2c3
+  Medium Beige #e6e6d7
+  Hover Beige #bba
+  Dark Beige #62624D
+  Light Blue #465A78
+  Dark Blue #162D5A
+  Dark Red #782828
+  Gold #AF7D19
+  
+*/
+.menu-torch { 
+		background-image: url("http://www.malone.edu/_resources/images/old/2004/header-torch.gif"); 
+			background-repeat: no-repeat; background-position: right top; 
+}
+.department-torch  { 
+			background-image: url("http://www.malone.edu/_resources/images/old/2004/header-torch-bottom.gif"); 
+			background-repeat: no-repeat; background-position: right top; 
+}
+.classes-listing {
+			font-size: 10px;
+}	
+.classes-closed {
+			color: #f00;
+}
+.classes-heading {
+			font-size: 12px; color: #fff;	font-weight: bold; background-color: #666;
+}
+.classes-title {
+			color: #fff; font-weight: bold; background-color: #333;
+}
+.columnhead { 
+			color: #fff; font-size: 12px; font-weight: bold; 
+			background-image: url(http://www.malone.edu/_resources/images/old/2004/homepage/content-header.gif); 
+			background-repeat: repeat-x; padding-right: 2px; padding-left: 2px; 
+			vertical-align: middle; border-left: 1px solid #fff; 
+}
+.columnhead-ext { background-image: url(http://www.malone.edu/_resources/images/old/2004/homepage/content-header.gif); background-repeat: repeat-x }
+#3columns   { vertical-align: top; border-right: 1px solid #fff; padding:2px; }
+p.home_dynamic { padding-right:5px; }
+.columnbody   { background-color: #e6e6d7; background-image: url(http://www.malone.edu/_resources/images/old/2004/homepage/torch-watermark.gif); background-repeat: no-repeat; padding: 4px; vertical-align: top; border-left: 1px solid #fff }
+.columnbody-ext { background-color: #d2d2c3; }
+.toppicture  { border: solid 1px #000 }
+
+#gateway { vertical-align: middle }
+#gateway td a   { color: #000; display: block; padding-top: 6px; padding-bottom: 6px; width: 100%; height: 100%; font-weight:normal}
+/*body #gateway td a {width:auto; }*/
+#gateway td a:hover  { color: #fff; background-color: #bba; text-decoration:none}
+#gateway img { margin-right: 5px }
+
+.gateway-title { color: #782828; font-size: 12px; font-weight: bold }
+
+.banner { background-repeat: no-repeat }
+
+
+#layer1 { visibility: visible; position: absolute; z-index: 1; top: 0; left: 0; width: 150px; height: 50px }
+
+td.border { border-style: solid; 
+				border-width: 1px 
+}
+
+td.noborder { border-width: 0px }

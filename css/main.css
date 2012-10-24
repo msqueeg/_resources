@@ -1,0 +1,2195 @@
+/*******************************************************************************
+
+	CSS on Sails Framework
+	Title: Malone University
+	Author: XHTMLized (http://www.xhtmlized.com/)
+	Date: April 2011
+
+********************************************************************************
+
+	1. BASE
+		1.1 Reset
+		1.2 Accessibility Navigation & Hide
+		1.3 Clearfix
+		1.4 Default Styles
+
+	2. COMMON
+		2.1 Container
+		2.2 Header
+		2.3 Navigation
+		2.4 Content
+		2.5 Sidebar
+		2.6 Footer
+		2.7 Banners
+
+	3. PAGES
+		3.1 Home
+		3.2 Audience Landing Page
+		3.3 Intro Text Landing Page
+		3.4 Two Column Interior Page
+		3.5 Form Template
+		3.6 Overview Landing Page
+		3.7 Office Landing Page
+		3.8 One Column Interior Page
+		3.9 Academics
+		3.10 Academics Department Page
+		3.11 Academics Program Page
+		3.12 News & Events Landing
+		3.13 News Item Template
+		3.14 Faculty or Staff List Page (vcard)
+		3.15 Faculty Profile Page
+		3.16 Serial Solutions Search page
+		3.17 OUSearch results page
+
+
+	4. PRINT
+
+*******************************************************************************/
+
+/* 1. BASE
+--------------------------------------------------------------------------------
+==============================================================================*/
+
+
+/* 1.1 Reset
+------------------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 1.2 Accessibility Navigation & Hide
+------------------------------------------------------------------------------*/
+
+#accessibility-nav {
+	position: absolute;	
+	height: 1px;
+	width: 1px;
+}
+
+#accessibility-nav a, .hide {
+	position: absolute;
+	top: -999em;
+	left: -999em;
+	padding: 10px;
+	border: 2px solid #003e7e;
+	background: white;
+	white-space: pre;
+}
+
+#accessibility-nav a:focus,
+#accessibility-nav a:active {
+	top: 0;
+	left: 0;
+}
+
+
+/* 1.3 Clearfix
+------------------------------------------------------------------------------*/
+
+.clearfix:after, 
+.container:after,
+#navigation ul:after,
+#content-wrapper:after,
+#footer_nav:after,
+#footer:after,
+.js #navigation .dropdown-navigation:after,
+.landing-overview:after,
+.bullet-list:after,
+.content-copy:after,
+#mission:after, 
+form dl:after,
+#news-landing-topbox:after,
+#news-article:after,
+#news-info:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+	height: 0;
+}
+
+
+/* 1.4 Default Styles
+------------------------------------------------------------------------------*/
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font: 75%/1.25 Helvetica, Arial, sans-serif;
+	color: #333;
+	background: #fff url(/_resources/images/common/BG_2-1.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	/*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./_resources/images/common/BG_2-1.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/_resources/images/common/BG_2-1.jpg', sizingMethod='scale')";*/
+	
+}
+
+#bg-image {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+hr {
+	display: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+th, td {
+	vertical-align: top;
+}
+
+th {
+	font-weight: normal;
+	text-align: left;
+}
+
+address, cite, dfn {
+	font-style: normal;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #999;
+	cursor: help;
+}
+
+input, textarea, select {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #898989;
+}
+
+textarea {
+	 overflow: auto;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: #237daf;	
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+	color: #237daf;
+}
+
+form dt, form dd {
+	margin-bottom: 12px;
+}
+
+form dt {
+	clear: both;
+	float: left;
+	width: 130px;
+	margin-right: 25px;
+	font-size: 91.66%;
+	font-weight: bold;
+}
+
+form dt label {
+	display: block;
+	text-align: right;	
+	line-height: 24px;	
+}
+
+form dd label {
+	position: relative;
+	top: -3px;
+	font-size: 91.66%;	
+}
+
+form dd {
+	float: left;
+}
+
+form .text {
+	width: 235px;
+	margin-bottom: 8px;
+}
+
+form .tel {
+	width: 75px;
+	margin-right: 5px;
+}
+
+form dd textarea {
+	width: 405px;
+	height: 170px;
+}
+
+form dt.full {
+	margin-top: 20px;
+}
+
+form dd.full {
+	line-height: 30px;
+}
+
+form dt.full, form dd.full {
+	margin-left: 155px;
+	width: 405px;
+}
+
+/* 2. COMMON
+--------------------------------------------------------------------------------
+==============================================================================*/
+
+
+/* 2.1 Container
+------------------------------------------------------------------------------*/
+
+.container {
+	position: relative;
+	z-index: 10;
+	min-height: 100%;	
+	background: url(../images/common/bg-pattern.png) top center repeat;
+}
+
+
+/* 2.2 Header
+------------------------------------------------------------------------------*/
+
+#header {
+	width: 920px;
+	height: 154px;
+	padding: 14px 15px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header .site-name,
+#header .site-name span {
+	display: block;
+	overflow: hidden;
+	width: 228px;
+	height: 85px;
+}
+/*mrm - added img tag into code for printing purposes*/
+#header .site-name span img {
+display: none;
+}
+
+#header .site-name {
+	position: absolute;
+	top: 58px;	
+}
+
+#header .site-name span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: url(../images/common/logo.png) no-repeat; /*mrm - disabled to test img tag in design*/
+}
+
+#header a.site-name span {
+	cursor: pointer;
+}
+
+#header a, #header a:visited {
+	color: #003e7e;
+}
+.outside-header {
+	background-image:url(http://dev.malone.edu/_resources/images/common/bg-pattern.png);
+}
+
+.outside-header .home {	
+	position: absolute;
+	top: 8px;
+	right: 0;
+	padding-top: 7px;
+	height: 54px;
+	padding-right: 40px;
+	text-align: right;
+	font-size: 91.66%;
+	font-weight: bold;
+	background: url(../images/common/home-icon.png) top right no-repeat;
+}
+
+#secondary-navigation {
+	margin-top: 5px;
+	font-size: 91.66%;
+	font-weight: bold;
+	word-spacing: 4px;
+	color: black;
+}
+
+#secondary-navigation li {
+	float: left;
+}
+
+#secondary-navigation li a {
+	word-spacing: 0;
+}
+
+/* Alert Bar  - added mrm
+------------------------------------------------------------------------------*/
+#alertBar{
+	background-image: url(../images/common/bg_alert.jpg);
+	background-repeat: repeat-x;
+	background-color: #C34129;
+	height: 35px;
+	overflow: visible;
+	width: 100%;
+	z-index: 50;
+	position: relative;
+}
+
+#alertBar #alertBarContent span{
+	font-size: 20px;
+	font-weight: 400;
+}
+
+#alertBarContent{
+	color: #FFF;
+	font-size: 14px;
+	line-height: 32px;
+	padding-left: 25px;
+	text-align: center;
+}
+
+
+/* 2.3 Navigation - Jeff Jensen update Oct 2012
+------------------------------------------------------------------------------*/
+
+#navigation {
+	background: #003e7e;
+	z-index: 50;
+	position: relative;
+}
+
+#navigation ul {
+	width: 950px;
+	margin: 0 auto;
+	position: relative;	
+}
+
+#navigation > ul > li {
+	float: left;
+	padding: 3px 0 0 0;
+	font-weight: bold;
+	font-size: 108.33%;
+	position: relative;
+	border-left: 1px solid white;
+}
+
+#navigation > ul > li:hover{
+	background: #678CB4;	
+}
+
+#navigation > ul > li > a {
+	display: block;	
+	color: white;	
+	line-height: 42px;
+	text-align: center;
+	/*padding: 0 1em;*/
+	text-transform: uppercase;
+}
+
+#navigation > ul > li > a:hover{
+	text-decoration: none;	
+}
+
+#navigation #nav_about {
+	border: none;
+}
+
+#navigation #nav_about > a {	
+	width: 121px;
+	margin-right: 3px;
+}
+
+#navigation #nav_why > a {
+	width: 110px;
+	margin: 0 3px;
+}
+
+#navigation #nav_admission > a {
+	width: 205px;
+	margin: 0 3px;
+}
+
+#navigation #nav_academics > a {
+	width: 90px;
+	margin: 0 3px;
+}
+
+#navigation #nav_student > a {
+	width: 104px;
+	margin: 0 3px;
+}
+
+#navigation #nav_athletics > a {
+	width: 85px;
+	margin: 0 3px;
+}
+
+#navigation #nav_alumni > a {
+	width: 60px;
+	margin: 0 3px;
+}
+
+#navigation #nav_news > a {
+	width: 126px;
+	margin-left: 3px;
+}
+
+#navigation .dropdown-navigation{
+	display: none;
+	position: absolute;
+	background: white;	
+	left: -8px;
+}
+
+#navigation .dropdown-navigation div{
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;	
+}
+
+#navigation .dropdown-navigation div ul{
+	position: relative;
+	margin: 0;	
+}
+
+#navigation > ul > li:hover .dropdown-navigation{
+	display: block;
+	width: 400px;
+	border: 8px solid rgb(0, 62, 126); /*Older Browsers*/
+	border: 8px solid rgba(0, 62, 126, .65);
+	border-radius: 0px 0px 16px 16px;
+	-moz-border-radius: 0px 0px 16px 16px; 
+	-webkit-border-radius: 0px 0px 16px 16px;
+	-webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	border-top: 0;
+	/*border-top: 0px;*/
+	padding: 1em;		
+}
+
+#navigation > ul > li:hover .dropdown-navigation > div ul{
+	width: 200px;
+	float: left;	
+}
+
+#navigation .dropdown-navigation li{
+	margin: 0;
+	padding: 0 1em .5em 0;	
+}
+
+#navigation .dropdown-navigation a{
+	color: #003e7e;	
+}
+
+/*Change position of dropdown-navigation from one side to the other */
+#navigation #nav_news .dropdown-navigation{
+	left: auto;
+	right: -8px;	
+}
+
+#header .home {	
+	position: absolute;
+	top: 8px;
+	right: 0;
+	padding-top: 7px;
+	height: 54px;
+	padding-right: 40px;
+	text-align: right;
+	font-size: 91.66%;
+	font-weight: bold;
+	/*background: url(../images/common/home-icon.png) top right no-repeat;*/
+}
+/*mrm - modifed header home and added #header fieldset*/
+
+.js #header fieldset {
+  position:relative;
+}
+
+#header fieldset {
+  margin-bottom:18px;
+  margin-left:0;
+  margin-right:0;
+  margin-top:21px;
+}
+.js #header label {
+    left: -999em;
+    position: absolute;
+}
+
+#header input {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+/* 2.4 Content
+------------------------------------------------------------------------------*/
+
+#content-wrapper {
+	width: 950px;
+	margin: 0 auto;
+	background: url(../images/common/bg-content.png);
+}
+
+#content {
+	position: relative;
+	float: right;
+	width: 694px;
+	margin-top: 20px;
+}
+
+#content-wrapper div.line-top {
+	border-top: 6px solid #003e7e;
+	margin-top: 36px;
+}
+#main-search {
+	
+	padding: 15px 20px;
+	background: white;
+	margin-bottom: 30px;
+}
+
+#galleria{height:320px}
+
+#main {
+	width: 575px;
+	padding: 15px 20px;
+	background: white;
+	margin-bottom: 30px;
+}
+#main a[href^="/_resources/php/email/email_obfuscation_form.php?"]{padding-right: 20px;background: transparent url(../icons/email.png) no-repeat center right;}
+#main a[href^="mailto:"],#main a[href^="MAILTO:"]{padding-right: 20px;background: transparent url(../icons/email.png) no-repeat center right;}
+#main a[href$=".pdf"],#main a[href$=".PDF"]{padding-right:18px; background:transparent url(../icons/pdf.png) no-repeat center right;}
+#main a[href$=".doc"],#main a[href$=".DOC"],#main a[href$=".docx"],#main a[href$=".DOCX"]{padding-right:18px; background:transparent url(../icons/doc.png) no-repeat center right;}
+#main a[href$=".xls"],#main a[href$=".XLS"],#main a[href$=".xlsx"],#main a[href$=".XLSX"]{padding-right:18px; background:transparent url(../icons/xls.png) no-repeat center right;}
+#main a[href$=".ppt"],#main a[href$=".PPT"],#main a[href$=".pptx"],#main a[href$=".PPTX"]{padding-right:18px; background:transparent url(../icons/ppt.png) no-repeat center right;}
+#main a[href$=".rss"],#main a[href$=".RSS"]{padding-right:18px; background:transparent url(../icons/rss.png) no-repeat center right;}
+#main a[href^="http:"],#main a[href^="HTTP:"]{padding-right:18px; background:transparent url(../icons/external.png) no-repeat center right;}
+#main a[href^="http://www.malone.edu"],#main a[href^="HTTP://WWW.MALONE.EDU"]{padding-right:0; background:none;}
+#main a[href^="http://webcal.malone.edu"],#main a[href^="HTTP://WEBCAL.MALONE.EDU"]{padding-right:0; background:none;}
+#main a.promo_purple[href^="http:"],#main a.promo_purple[href^="HTTP:"],#main a.promo_green[href^="http:"],#main a.promo_green[href^="HTTP:"]{
+	display: block;
+	padding: 55px 15px 0 15px;
+	height: 100px;
+	margin-bottom: 12px;
+	background: #f3f0f3 url(../images/common/promo_arrow.png) 11px 13px no-repeat;
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, sans-serif;
+	font-size: 183.33%;
+	color: #6a0d71;
+}
+#main a.promo_green[href^="http:"],#main a.promo_green[href^="HTTP:"]{
+	color: #367c4f;
+	background-color: #ebf2ed;
+}
+
+#breadcrumb {	
+	font-size: 91.66%;
+	margin-bottom: 7px;
+}
+
+#breadcrumb a {
+	color: #237daf;
+}
+
+.landing-overview {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.landing-overview .more a {
+	display: block;
+	color: #237daf;
+	font-size: 116.66%;
+	line-height: 1.2;
+}
+
+.landing-overview h1 {
+	width: 0;
+	height: 0;
+	text-indent: -9999px; /*get the actual text out of site*/
+} /*mrm*/
+
+.landing-overview h2 {
+	padding-bottom: 13px;
+	border-bottom: 1px solid #d1d1d1;
+}
+
+.landing-overview h2  a{
+	font-size: 183.33%;
+	color: #003e7e;
+	font-weight: normal;
+	margin: 10px 0 3px;
+}
+
+.landing-overview h2 a:hover , .landing-overview h2 a:hover strong, .landing-overview h2 a:active, .landing-overview h2 a:focus {
+	text-decoration: none;
+}
+
+.landing-box {
+	width: 212px;
+	float: left;
+	margin-right: 29px;
+}
+
+.landing-box ul {
+	float: left;
+	width: 99px;
+	font-size: 91.66%;
+}
+
+.landing-box ul a {
+	color: #237daf;
+}
+
+.landing-box ul li {
+	margin: 9px 0;
+}
+
+.landing-box ul.right {
+	float: right;
+}
+
+.bullet-list {
+	border-top: 2px solid #003e7e;
+	padding-top: 20px;
+}
+
+.bullet-list > ul {
+	float: left;
+	width: 260px;
+	margin-right: 25px;
+}
+
+.bullet-list > ul > li {
+	background: url(../images/common/list-bullet.png) 0 5px no-repeat;
+	padding-left: 34px;	
+	margin-bottom: 28px;
+}
+
+.bullet-list ul li h2 a {
+	color: #003e7e;
+	font-size: 183.33%;
+	font-weight: normal;
+	line-height: 1.2;
+	padding-top: 2px;
+	text-decoration: none;
+}
+
+.bullet-list ul li p {
+	margin: 5px 0;
+	font-size: 133.33%;
+	color: #707070;
+	font-family: Georgia, serif;
+}
+
+
+.bullet-list .submenu {
+	border-top: 1px solid #d1d1d1;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+
+.bullet-list .submenu a {
+	color: #237daf;
+	display: block;
+	margin: 3px;
+}
+
+.hero-top .hero {
+	margin-top: -109px;
+	border-bottom: 6px solid #003e7e;
+}
+
+.hero-top .hero img {
+	display: block;	
+}
+
+.content-copy a {
+	color: #237daf;
+}
+
+.content-copy h1 {
+	margin-bottom: 10px;
+	font-size: 200%;
+	font-weight: bold;	
+} /*mrm*/
+
+.content-copy h2 {
+	font-weight: bold;
+	color: black;
+	font-size: 116.66%;
+}/*mrm*/
+
+.content-copy h3, #news-landing-topbox h3 {
+	font-weight: bold;
+	color: #707070;
+	font-size: 116.66%;
+}
+
+.content-copy ul {
+	color: #707070;
+	list-style: disc outside;
+	margin-left: 15px;
+	line-height: 1.66;
+}
+
+.content-copy ul li {
+	margin-bottom: 10px;
+}
+
+.content-copy ol {
+	color: #707070;
+	list-style: decimal outside;
+	margin-left: 15px;
+	line-height: 1.66;
+}
+
+.content-copy ol li {
+	margin-bottom: 10px;
+}
+
+.content-copy .left, #news-landing-topbox .left {
+	float: left;
+	width: 150px;
+}
+
+.content-copy .right,  #news-landing-topbox .right {
+	float: right;
+	width: 400px;
+}
+
+.content-copy .narrower {
+	margin-right: 90px;
+}
+
+.content-copy .narrow {
+	margin-right: 185px;
+}
+
+.content-copy .intro, #news-landing-topbox .intro {
+	color: #707070;
+	font-size: 158.33%;
+	font-family: Georgia, serif;
+	margin-top: -5px;
+	margin-bottom: 10px;
+	line-height: 1.2;
+}
+
+.content-copy .sub-intro {
+	font-size: 116.66%;
+	color: #707070;
+	line-height: 1.4;
+}
+
+.content-copy .float_left {
+	float: left;
+	margin: 10px 15px;
+	margin-left: 0;
+}
+
+.content-copy .float_right {
+	float: right;
+	margin: 10px 15px;
+	margin-right: 0;		
+}
+
+/*.content-copy blockquote {
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, sans-serif;
+	font-size: 183.33%;
+	color: #898989;
+	margin-bottom: 15px;
+}*/
+
+.content-copy #blockquote {
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, sans-serif;
+	font-size: 183.33%;
+	color: #898989;
+	margin: 0 0 15px 0;
+	line-height: 1.25;
+}
+/*mrm*/
+
+.content-copy .founder {
+	width: 175px;
+	margin: 20px 35px;
+}
+
+.content-copy .caption {
+	color: #003e7e;
+	margin: 10px 0;
+	font-size: 100%;
+}
+
+.content-copy .video {
+	margin-bottom: 25px;
+}
+
+.content-copy .video p {
+	color: #003e7e;
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-size: 100%;	
+}
+
+.content-copy p {
+	margin: 16px 20px 16px 0;
+	color: #555;
+	font-size: 116.66%;
+	line-height: 1.43;
+}
+
+.small {
+	font-size: 91.66%;
+}
+
+.content-copy {
+	margin-bottom: 22px;
+}
+
+.student-spotlight {
+	height: 153px;
+	margin: 10px 0 45px;
+	overflow: hidden;
+	background: #6a0d71;
+}
+
+.student-spotlight img {
+	float: left;
+	border-right: 3px solid white;
+}
+
+.student-spotlight h3 {
+	line-height: 38px;
+	font-size: 108.33%;
+	text-indent: 12px;
+	color: black;
+	background: #e0ebef;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*.student-spotlight blockquote {
+	font-size: 183.33%;
+	color: white;
+	margin: 10px 10px 7px 172px;	
+}*/
+
+.student-spotlight blockquote p {
+	font-size: 183.33%;
+	color: white;
+	margin: 10px 10px 7px 172px;
+	line-height: 1.25;
+}
+/*mrm*/
+.student-spotlight p {
+	margin: 7px 10px 10px 175px;
+	line-height: 1.4;
+	color: white;
+}
+
+.content-copy a.promo_purple,
+.content-copy a.promo_green {
+	display: block;
+	padding: 55px 15px 0 15px;
+	height: 100px;
+	margin-bottom: 12px;
+	background: #f3f0f3 url(../images/common/promo_arrow.png) 11px 13px no-repeat;
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, sans-serif;
+	font-size: 183.33%;
+	color: #6a0d71;
+}
+
+.content-copy a.promo_green {
+	color: #367c4f;
+	background-color: #ebf2ed;
+}
+
+
+#offer {
+	margin-bottom: 50px;
+}
+
+#offer h3 {
+	margin: 30px 0 10px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #707070;
+	font-size: 133.33%;
+}
+
+#offer ul {
+	list-style: none;
+	margin-left: 0;
+}
+
+#offer li {
+	margin-bottom: 0;
+	border-bottom: 1px solid #d1d1d1;
+}
+
+#offer li.last {
+	border-bottom: none;
+}
+
+#offer li a {
+	display: block;
+	font-size: 158.33%;
+	padding: 3px 0;
+}
+
+.view-all {
+	font-size: 116.66%;
+}
+
+/* 2.5 Sidebar
+------------------------------------------------------------------------------*/
+
+#sidebar {
+	float: left;
+	width: 226px;
+	padding: 20px 12px 20px 16px;
+}
+
+#sidebar a, #sidebar a:visited {
+	color: #003e7e;
+}
+
+#audience {
+	margin-bottom: 25px;
+}
+
+#audience li {
+	width: 200px;
+	background: #003e7e;
+	margin-bottom: 6px;
+}
+
+#sidebar #audience a {
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	overflow: hidden;
+	font-size: 108.33%;
+	font-weight: bold;
+	text-indent: 9px;
+	margin-right: -3px;
+	width: 229px;	
+	color: white;
+	background: url(../images/common/bg-audience-nav.png) top left no-repeat;	
+}
+
+#sidebar #audience a:hover {
+	text-decoration: none;
+	background-position: 0 -50px;
+}
+
+#sidebar #audience .active a {
+	text-decoration: none;
+	background-position: 0 -25px;
+}
+
+#promotions {
+	position: relative;
+	border-top: 6px solid #003e7e;
+	margin-bottom: 20px;
+}
+
+#promotions .scrollable {
+	margin-left: 34px;
+	position: relative;
+	overflow: hidden;
+	width: 160px;
+	height: 227px;
+}
+
+#promotions .prev,
+#promotions .prev span {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 29px;
+	height: 28px;
+}
+
+#promotions .prev {	
+	top: 67px;
+	left: 0;	
+	padding: 6px 7px;
+	width: 15px;
+	height: 16px;
+}
+
+#promotions .prev span {
+	background: url(../images/common/banner-nav-rollover-prev.png) 0 0 no-repeat;
+}
+
+#promotions .prev:hover span {
+	background-position: 0 -28px;
+}
+
+#promotions .next,
+#promotions .next span {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	right: 0;
+	width: 29px;
+	height: 28px;
+}
+
+#promotions .next {	
+	top: 67px;
+	right: 0;
+	padding: 6px 7px;
+	width: 15px;
+	height: 16px;	
+}
+
+#promotions .next span {
+	background: url(../images/common/banner-nav-rollover-next.png) 0 0 no-repeat;
+}
+
+#promotions .next:hover span {
+	background-position: 0 -28px;
+}
+
+#promotions ul {	
+	width: 20000em;
+	position: absolute;
+	height: 180px;
+	background: black;
+}
+
+#promotions ul li {
+	float: left;
+	height: 227px;
+}
+
+#sidebar .motto {
+	font-weight: bold;
+}
+#sidebar h1{
+	font-weight: bold;
+}
+
+#sidebar p {
+	margin: 10px 0;
+	font-size: 91.66%;
+}
+
+#interior-nav {
+	margin-bottom: 30px;
+}
+
+#interior-nav h2 {
+	font-size: 116.66%;
+	color: black;
+	font-weight: bold;
+	margin-bottom: 8px;
+	border-bottom: 2px solid #003e7e;
+	line-height: 1;
+	padding-bottom: 6px;
+	text-transform: uppercase; 
+}
+
+#interior-nav > ul > li {
+	padding: 0 10px;	
+}
+
+#interior-nav > ul > li > a {
+	display: block;
+	margin: 5px 0;
+	padding: 4px 0;
+	font-weight: bold;
+}
+
+#interior-nav > ul > li.selected {
+	background: white;	
+}
+
+#interior-nav li.active > a {
+	color: #507294;
+}
+
+#interior-nav .submenu {
+	/*background: white;*/
+	margin: 0px 10px;
+	border-top:1px solid white;
+	/*padding 0px 15px; OU edit*/
+	/*margin: 0;*/	
+	font-weight:bold;
+	/*font-size: 91.66%;*/
+}
+
+#interior-nav .submenu ul {
+	margin-top: 8px;
+	margin-left: 15px;
+}
+
+#interior-nav .submenu ul li {
+	/*background: url(../images/common/submenu_bullet.png) 0 5px no-repeat;*/
+	/*text-indent: 8px;*/
+}
+
+#interior-nav  .submenu ul li.selected {
+	background: white;	
+	padding: 3px 3px;
+}
+
+#interior-nav .submenu h3 {
+	font-weight: bold;
+	text-transform: uppercase;	
+	margin-bottom: 8px;
+}
+
+#interior-nav .submenu li {
+	margin-bottom: 10px;
+}
+
+.gap {
+	padding-bottom: 110px;
+}
+
+#news {
+	padding: 11px;
+	font-weight: bold;
+	color: white;
+	background: #003e7e;
+	padding-top: 0;
+}
+
+#news h2 {
+	text-transform: uppercase;
+	padding: 15px 0 5px;
+	font-size: 108.33%;
+}
+
+#sidebar #news a {
+	color: #40c2f3;
+	word-wrap: break-word;
+}
+#sidebar #news p a, #sidebar #news h2 a {
+	color: white;	
+}
+#sidebar #news p.more a {
+	color: #40c2f3;	
+}
+
+#news p {
+	font-size: 100%;
+	margin: 3px 0;
+	word-wrap: break-word;
+}
+
+
+#news .more  {
+	padding-bottom: 10px;
+}
+
+#news p.more a {
+	font-weight: normal;
+	font-size: 91.66%;
+}
+
+/*Begin MRM changes*/
+#fb {
+	background: white;
+}
+#news h2.twitter {
+	background: url(../icons/twitter_white.png) 0 75% no-repeat;
+	text-indent: 20px;
+}
+
+/*end MRM*/
+/* 2.6 Footer
+------------------------------------------------------------------------------*/
+
+#footer {
+	clear: both;
+	font-size: 91.66%;
+	margin-top: 21px;		
+}
+
+#footer input {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+.js #footer label {
+	position: absolute;
+	left: -999em;
+}
+
+#search {
+	width: 226px;
+	border: none;
+	text-indent: 7px;
+	padding: 4px 0;
+}
+
+#footer fieldset {
+	margin: 21px 0 18px;
+}
+
+.js #footer fieldset {
+	position: relative;
+}
+
+.js #search_button {
+	position: absolute;
+	top: 3px;
+	right: 1px;
+}
+
+#footer_nav, #footer address {
+	font-weight: bold;
+	margin: 8px 0;
+}
+
+#footer address {
+	line-height: 1.35;
+}
+
+#footer_nav li {
+	float: left;
+}
+
+#footer p {
+	font-size: 90.90%;
+	margin: 10px 0;
+}
+
+#social_media_buttons li {
+	float: left;
+	margin-right: 8px;
+}
+
+
+/* 2.6 Banners
+------------------------------------------------------------------------------*/
+
+#content .banner-purple,
+#content .banner-green,
+#content .banner-blue,
+#content .banner-red,
+#content .banner-orange {
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+#content-wrapper .hero-top .banner-purple,
+#content-wrapper .hero-top .banner-green,
+#content-wrapper .hero-top .banner-blue,
+#content-wrapper .hero-top .banner-red,
+#content-wrapper .hero-top .banner-orange {
+	position: absolute;
+	top: 221px;
+	right: 10px;
+}
+
+#sidebar .banner-purple a, .banner-purple a,
+#sidebar .banner-green a, .banner-green a,
+#sidebar .banner-blue a, .banner-blue a,
+#sidebar .banner-red a, .banner-red a,
+#sidebar .banner-orange a, .banner-orange a {
+	display: block;
+	width: 128px;
+	height: 195px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;	
+}
+
+.banner-purple a:hover,
+.banner-green a:hover,
+.banner-blue a:hover,
+.banner-red a:hover,
+.banner-orange a:hover {
+	text-decoration: none;
+}
+
+.banner-purple a strong,
+.banner-green a strong,
+.banner-blue a strong,
+.banner-red a strong,
+.banner-orange a strong {
+	display: block;
+	padding-bottom: 5px;
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.banner-purple a {
+	background: url(../images/common/banner-purple.png) no-repeat;
+}
+
+.banner-green a {
+	background: url(../images/common/banner-green.png) no-repeat;
+}
+
+.banner-blue a {
+	background: url(../images/common/banner-blue.png) no-repeat;
+}
+
+.banner-red a {
+	background: url(../images/common/banner-red.png) no-repeat;
+}
+
+.banner-orange a {
+	background: url(../images/common/banner-orange.png) no-repeat;
+}
+
+
+/* 3. PAGES
+--------------------------------------------------------------------------------
+==============================================================================*/
+
+
+/* 3.1 Home
+------------------------------------------------------------------------------*/
+.js #hero {
+	position: relative;
+	overflow: hidden;
+	
+	margin-left: 111px;	
+	display: none;
+}
+
+#hero ul {
+	position: absolute;	
+	height: 20000em;
+}
+
+#hero ul li {
+	width: 460px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	background: black;
+	margin-bottom: 2px;
+}
+
+#hero ul li a:hover {
+	text-decoration: none;
+}
+
+#hero ul li a * {
+	/*opacity: 0.7;*/
+}
+
+#hero ul li a:hover * {
+	/*opacity: 1;*/
+}
+
+#hero .news-detail {
+	width: 170px;
+	padding: 15px;
+	color: white;
+	background: url(../images/common/50_percent_gray.png);	
+}
+
+#hero .news-detail.left {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#hero .news-detail.right {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#hero .news-detail strong {
+	display: block;	
+	font-size: 145.45%;
+}
+
+#hero .news-detail em {
+	margin: 5px 0;
+	display: block;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 109.09%;
+}
+
+#hero .news-detail {
+	font-size: 91.66%;
+}
+
+#hero .promo-detail.left {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+}
+
+#hero .promo-detail.right {
+	position: absolute;
+	top: 30px;
+	right: 15px;
+	}
+
+#hero .promo-detail {
+	font-size: 133.33%;
+	font-family: Georgia, serif;
+	font-style: italic;
+	color: white;
+}
+
+#hero .promo-detail strong {
+	display: block;
+	width: 185px;
+	margin-bottom: 15px;
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, sans-serif;
+	font-size: 150%;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#hero .promo-detail em {
+	display:inline-block;
+	background: url(../images/common/50_percent_blue.png);
+	/*color:#41c1f3;*/
+	color:#ffffff;
+	font-size:109.09%;
+	padding: 3px;
+	text-decoration:none;
+	}
+
+#hero .dark {
+	color: #446e9b;
+}
+
+#hero-controls {
+	position: absolute;
+	top: 47px;
+	right: 50px;
+	width: 41px;
+}
+
+#hero-controls .prev,
+#hero-controls .prev span {
+	position: absolute;
+	width: 41px;
+	height: 41px;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+#hero-controls .prev {
+	display: block;
+	position: relative;	
+	margin-bottom: 5px;
+	padding: 10px 5px;
+	width: 31px;
+	height: 21px;
+}
+
+#hero-controls .prev span {
+	background: url(../images/home/hero-up.png) no-repeat;
+}
+
+#hero-controls .prev:hover span {
+	background-position: 0 -41px;
+}
+
+#hero-controls .next,
+#hero-controls .next span {
+	position: absolute;
+	width: 41px;
+	height: 41px;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+#hero-controls .next {
+	display: block;
+	position: relative;
+	padding: 10px 5px;
+	width: 31px;
+	height: 21px;	
+}
+
+#hero-controls .next span {
+	background: url(../images/home/hero-down.png) no-repeat;
+}
+
+#hero-controls .next:hover span {
+	background-position: 0 -41px;
+}
+
+.home-page #footer {
+	margin-top: 30px;
+}
+
+
+/* 3.2 Audience Landing Page
+------------------------------------------------------------------------------*/
+
+.audience-landing-page .content-copy .intro {
+	font-size: 133.33%;
+	margin-right: 90px;
+}
+
+.audience-landing-page .bullet-list {
+	margin-top: 70px;
+}
+
+.audience-landing-page #footer {
+	margin-top: 130px;
+}
+
+.audience-landing-page .content-copy h1 {
+	margin-bottom: 30px;
+}
+
+
+/* 3.3 Intro Text Landing Page
+------------------------------------------------------------------------------*/
+
+#mission {
+	color: #707070;
+	font-family: Georgia, serif;
+	margin-right: 90px;
+}
+
+#mission img {
+	float: left;
+	margin-right: 24px;
+}
+
+#mission h1 {
+	font-size: 200%;
+	color: black;
+	font-style: italic;
+} /*mrm - changed from h2*/
+
+#mission p {
+	font-size: 133.33%;
+	margin: 12px;
+	line-height: 1.35;
+}
+
+/*.about-page*/
+.intro-text .bullet-list {
+	margin-top: 20px;	
+}
+
+#footer {
+	margin-top: 90px;
+}
+
+
+/* 3.4 Two Column Interior Page
+------------------------------------------------------------------------------*/
+
+/*.about-history-page*/
+.two-column .content-copy .intro {	
+	margin-bottom: 25px;
+}
+
+#timeline {
+	padding: 15px 10px;
+	background: #f3f0f3;	
+}
+
+#timeline h3 {
+	margin-bottom: 15px;
+	font-size: 200%;
+	font-style: italic;
+	font-family: Georgia, serif;
+	color: black;
+	font-weight: normal;
+}
+
+#timeline dt {
+	font-size: 150%;	
+	font-style: italic;
+	font-family: Georgia, serif;
+	color: #6a0d71;	
+}
+
+#timeline dd {
+	color: #636363;
+	font-weight: bold;
+	font-size: 100%;
+	margin: 5px 0 15px;
+}
+
+
+/* 3.5 Form Template
+------------------------------------------------------------------------------*/
+
+
+/* 3.6 Overview Landing Page
+------------------------------------------------------------------------------*/
+
+#sidebar #apply {
+	display: block;
+	margin-bottom: 40px;
+	width: 195px;
+	height: 81px;
+	padding: 16px;
+	color: white;
+	background: #003e7e url(../images/common/apply-banner.png) top left no-repeat;	
+}
+
+#sidebar #apply strong {
+	display: block;
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: normal;
+	padding-bottom: 8px;
+}
+
+#apply:hover {
+	text-decoration: none;
+}
+
+/*.admission-page #footer {
+	margin-top: 150px;
+}*/
+
+
+/* 3.7 Office Landing Page
+------------------------------------------------------------------------------*/
+
+/*.admission-undergraduate-page*/ 
+.office .content-copy h1 {
+	margin-bottom: 26px;
+}
+
+.office #footer {
+	margin-top: 30px;
+}
+
+
+/* 3.8 One Column Template
+------------------------------------------------------------------------------*/
+
+/*.admission-apply-page */
+.one-column .content-copy h1 {
+	margin-bottom: 26px;
+}
+
+.one-column #footer {
+	margin-top: 40px;
+}
+
+
+/* 3.9 Academics
+------------------------------------------------------------------------------*/
+
+.academics-page #footer {
+	margin-top: 130px;
+}
+
+
+/* 3.10 Academics Department Page
+------------------------------------------------------------------------------*/
+
+.catalog h3 {
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, sans-serif;
+	color: #707070;
+	font-size: 133.33%;
+}
+
+.catalog h4 {
+	margin: 25px 0 10px;
+	font-size: 116.66%;
+	font-weight: bold;
+	color: black;
+}
+
+.catalog h5 {
+	margin: 20px 0 10px;
+	color: #003e7e;
+	font-style: italic;
+	font-size: 116.66%;
+}
+
+/*.academics-va-page*/
+.department .content-copy h1 {
+	margin-bottom: 31px;
+}
+
+.department #footer {
+	margin-top: 30px;
+}
+
+
+/* 3.11 Academic Program Pages
+------------------------------------------------------------------------------*/
+
+/*.academics-va-ba-page*/ 
+.programs .content-copy h1 {
+	margin-bottom: 31px;
+}
+
+.programs #footer {
+	margin-top: 30px;
+}
+
+#programs-info {
+	display:none;
+}
+
+/* 3.12 RSS Feeds (News & Events Landing, News Releases, etc.)
+------------------------------------------------------------------------------*/
+
+#event-calendar {
+	display: block;
+	height: 150px;
+	width: 150px;
+	overflow: hidden;
+	background: url(http://dev.malone.edu/_resources/images/news-and-events/calendar-sprite.jpg) top left no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	margin-top: 2%;
+}
+
+#event-calendar:hover {
+	text-decoration: none;
+	background-position: 0 -150px;
+}
+
+#news-landing-topbox {
+	border-bottom: 2px solid #003e7e;
+	margin-bottom: 15px;
+	padding-bottom: 25px;
+}
+
+#tags {
+	float: right;
+	font-size: 91.66%;
+	line-height: 1.9; 
+	width: 117px;
+	margin-top: 12px;
+}
+
+#tags h3 {
+	font-weight: bold;
+}
+
+#tags ul ul {
+padding-left: 10px;
+}
+
+.news-landing-page #content h1{
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, sans-serif;
+	font-size: 183.33%;
+	color: #003e7e;
+	margin-bottom: 15px;
+	padding-top: 5px;
+} /*mrm - changed h2 to h1*/
+
+.news-landing-page #content h2{
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, sans-serif;
+	font-size: 183.33%;
+	color: #003e7e;
+	margin-bottom: 15px;
+	padding-top: 5px;
+}
+
+.news-box {
+	width: 100%;
+	/*background: url(../images/news-and-events/news-separator.png) bottom left no-repeat;*/
+	height: 78px;
+	padding-bottom: 18px;
+	margin-bottom: 12px;
+	border-bottom: solid black 1px;
+}
+
+.news-box img {
+	float: right;
+	margin-left: 2%;
+	width: 92px;
+	height: 92px;
+}
+
+
+.news-box h3, .pr-list h3 , #news-text h3 {
+	font-weight: normal;
+	font-size: 133.33%;
+	margin: 5px 0 3px;
+}
+
+.news-box .date, .pr-list .date, .melt-box .date, #news-text .date {
+	font-weight: normal;
+	color: #707070;
+}
+
+.news-box .more, .pr-list .more  {
+	font-size: 91.66%;
+	margin-top: 6px;
+}
+
+#news-text .contact-info {
+	color: #707070;
+	font-size: 91.66%;
+}
+
+.pr-list .description {
+	color:#888888;
+	font-size:90%;
+	line-height:1.5em;
+}
+.pr-list li {
+	margin-bottom:8px;
+}
+
+.melt-box h3 {
+	font-weight: normal;
+	margin: 5px 0 3px;
+}
+
+.melt-box {
+	margin-bottom: 12px;
+}
+
+/* 3.13 News Item Page
+------------------------------------------------------------------------------*/
+
+#news-text {
+	float: left;
+	width: 400px;
+}
+
+#news-text h1 {
+	font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 18px;
+}/*mrmr - changed from h2*/
+
+#news-text h3 {
+	margin-top: 15px;
+}
+
+#news-text .intro {
+	font-size: 116.66%;
+	color: #555;
+	font-style: italic;
+	margin: 15px 0;
+	line-height: 1.43;
+}
+
+#news-article {
+	border-bottom: 2px solid #003e7e;
+	margin-bottom: 10px;
+}
+
+#news-article .content-copy {
+	margin-bottom: 10px;
+}
+
+#news-info {
+	padding-top: 5px;
+}
+
+#news-info p {
+	float: left;
+	font-size: 91.66%;
+	line-height: 1.6; 
+}
+
+#news-info .share {
+	float: right;
+	margin-right: 8px;
+}
+
+/* 3.14 Faculty or Staff List Page (vcard)
+------------------------------------------------------------------------------*/
+
+.vcard {
+	height: 153px;
+	margin: 10px 0 45px;
+	overflow: hidden;
+	/*background: #6a0d71;*/
+}
+
+.vcard img {
+	float: left;
+	border-right: 3px solid white;
+}
+
+.vcard h3 {
+	line-height: 38px;
+	font-size: 108.33%;
+	text-indent: 12px;
+	color: black;
+	background: #e0ebef;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.vcard blockquote p {
+	font-size: 183.33%;
+	color: white;
+	margin: 10px 10px 7px 172px;
+	line-height: 1.25;
+}
+
+.vcard p, .vcard ul {
+	margin: 7px 10px 10px 175px;
+	line-height: 1.4;
+	color: black;
+}
+.vcard p.title {
+font-weight: bold;
+font-size: 108.33%;
+}
+
+.vcard a.download {
+position: relative;
+top:-20px;
+left: 270px;
+color: #40C2F3;
+font-style:italic;
+padding:3px 32px 3px 0;
+background:transparent url(../icons/micro-hcard.gif) no-repeat top right;
+}
+
+/* 3.15 Faculty Profile Page
+------------------------------------------------------------------------------*/
+
+.faculty-profile .content-copy h3 {
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, sans-serif;
+	color: #003E7E;
+	font-size: 133.33%;
+	margin: 0 0 20px;
+}
+
+.faculty-profile .content-copy h4 {
+	margin: 25px 0 10px;
+	font-size: 116.66%;
+	font-weight: bold;
+	color: black;
+}
+
+.faculty-profile .content-copy h5 {
+	margin: 20px 0 10px;
+	color: #003e7e;
+	font-style: italic;
+	font-size: 116.66%;
+}
+
+.faculty-profile .content-copy h1 {
+	margin-bottom: 31px;
+}
+.faculty-profile .caption {
+	color: #003e7e;
+	margin: 5px 0;
+	font-size: 100%;
+}
+
+.faculty-profile #footer {
+	margin-top: 30px;
+}
+
+/* 3.16 Serial Solutions Search page 
+------------------------------------------------------------------------------*/
+.SS_EJPTable {
+	width: 950px;
+	padding: 0px 20px;
+	background: white;
+	margin: 0 auto;
+	border-top: 6px solid #003E7E;
+	}
+
+.SS_ToolLabels {
+	margin-bottom: 10px;
+	font-size: 200%;
+	font-weight: bold;
+
+	}
+
+.SS_DataBaseIndex li {
+	padding: 0 10px;
+	}
+
+.SS_DataBaseIndex li a {
+	display: block;
+	margin: 5px 0;
+	padding: 4px 0;
+	font-weight: bold;
+
+	}
+
+.SS_EJPMainCell {
+	padding: 25px;
+	}
+
+
+
+.SS_ResultsAtoZLinks a{
+	padding: 4px 0;
+	font-weight: bold;
+	}
+
+.SS_CopyRightStatement {
+	text-align: center;
+}
+
+/* 3.16 Serial Solutions Search page 
+------------------------------------------------------------------------------*/
+.resultspage .resultstop {
+padding: 10px;
+}
+
+.resultspage .label {
+font-weight: bold;
+}
+
+.resultspage .results table {
+margin: 10px;
+}
+
+.resultspage .title {
+font-weight: bold;
+font-size: 120%;
+}
+
+
+/* 4. PRINT
+--------------------------------------------------------------------------------
+==============================================================================*/
+/* print CSS modified/extended by Michael R Miller, Malone University */
+
+@media print {
+
+	body { 
+		color : #000000;
+		background : #ffffff; 
+		font: normal normal 12pt/1.5em "Times New Roman", Times, serif; 
+	}
+
+	#main {
+		width: 100%;
+	}
+
+	#content {
+		float: left;
+		margin-top: 0px;
+		position: relative;
+		width: 100%;
+	}
+
+	.content-copy .left {
+		float: left;
+		width: 100%;
+	}
+
+	.content-copy .right {
+		float: left;
+		width: 100%;
+	}
+
+	.content-copy .narrower {
+		margin-right: 0px;
+	}
+
+	.content-copy a.promo_purple, .content-copy a.promo_green {
+		background: none;
+		color: #6A0D71;
+		display: list-item;
+		font-family: "Helvetica Neue Light","HelveticaNeue-Light",Arial,Helvetica,sans-serif;
+		font-size: 183.33%;
+		height: 100px;
+		margin-bottom: 0px;
+		padding: 0px 0px 0;
+	}
+
+	a { 
+		text-decoration : underline; 
+		color : #0000ff;
+	}
+
+	a[href]:after { 
+		content: " (" attr(href) ") "; 
+		font-size: 90%; 
+	}
+
+	a[href^="/"]:after { 
+		content: " (http://www.malone.edu" attr(href) ") "; 
+	}
+
+	ol#accessibility-nav, 
+	.hide { 
+		display: none !important; 
+	}
+	#navigation, #secondary-navigation, #sidebar, #breadcrumb,  a.home, .banner-purple, .banner-green, .banner-blue, .banner-red, .banner-orange, .hero {
+		display: none;
+	}
+
+	img#bg-image { 
+		display: none;
+	}
+}

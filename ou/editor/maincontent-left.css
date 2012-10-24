@@ -1,0 +1,33 @@
+@import url("/_resources/css/main.css");
+
+body{
+  background:#FFF url("/_resources/ou/editor/main-bg.png") no-repeat;
+  margin:357px 78px 3px 278px;
+  width:150px;
+}
+
+div{
+  border:2px dashed #DDD;
+}
+
+.promo_purple, .promo_green {
+    background: url("/_resources/images/common/promo_arrow.png") no-repeat scroll 11px 13px #F3F0F3;
+    color: #6A0D71;
+    display: block;
+    font-family: "Helvetica Neue Light","HelveticaNeue-Light",Arial,Helvetica,sans-serif;
+    font-size: 183.33%;
+    height: 100px;
+    margin-bottom: 12px;
+    padding: 55px 15px 0;
+}
+
+.promo_green {
+    background-color: #EBF2ED;
+    color: #367C4F;
+}
+
+.caption {
+    color: #003E7E;
+    font-size: 100%;
+    margin: 10px 0;
+}

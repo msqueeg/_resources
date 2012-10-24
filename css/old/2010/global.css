@@ -1,0 +1,1880 @@
+/************************************************************************************
+*     Malone University - global / screen.css      *
+*************************************************************************************/
+/* global styles */
+
+@import url(..css/menu.css);
+
+body
+	{
+	margin: 0; 
+	padding: 0; /* Need to set body margin and padding to get consistency between browsers. */
+	background-repeat: repeat-x;
+	background-position: center;
+	background-position: top; 
+	font: normal 13px/22px Tahoma, Arial, sans-serif;
+	color: #555;
+	}
+body.inner
+	{
+	margin: 0; 
+	padding: 0; /* Need to set body margin and padding to get consistency between browsers. */
+	background-repeat: repeat-x;
+	background-position: center;
+	background-position: top; 
+	font: normal 13px/22px Tahoma, Arial, sans-serif;
+	color: #555;
+	}
+#wrapper {
+	margin: 0px auto; /* Right and left margin widths set to "auto" */
+	padding: 0;
+	width: 950px;
+}
+
+#wrapper.inner{
+	background: url(/_resources/images/old/2010/bg_content_body.jpg) repeat-y;
+}
+
+
+h1 {
+	margin: 0 0 10px 30px;
+	padding: 0;
+	font: bold 24px Tahoma, Arial, Helvetica, sans-serif;
+	color: #252525;
+	}
+h2 {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font: bold 24px Georgia, serif;
+	color: #C41230;
+	}
+h2.nomargin {
+	margin: 0;
+	padding: 0;
+	font: bold 24px Georgia, serif;
+	color: #C41230;
+	}
+h2.rightrail {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font: bold 22px Tahoma, Arial, Arial, Helvetica, sans-serif;
+	color: #C41230;
+	}
+h3 {
+	margin: 0 0 1px 0;
+	padding: 0;
+	font: bold 15px Tahoma, Arial, sans-serif;
+	color: #9E0B0F;
+	}
+h4 {
+	width: 200px;
+	margin:  0;
+	padding: 6px 0 7px 22px;
+	font: bold 13px Tahoma, Arial, Helvetica, sans-serif;
+	color: #fff;
+	background-color: #86B6E0;
+	}
+h5 {
+	margin: 7px 0 1px 0;
+	padding: 0;
+	font: bold 12px Tahoma, Arial, sans-serif;
+	color: #000;
+	}
+h5.date {
+	margin: 1px 0 4px 0;
+	padding: 0;
+	font: normal 11px Tahoma, Arial, sans-serif;
+	color: #000;
+	}
+h6 {
+	margin:  15px 0 0 0;
+	padding: 0;
+	font: bold 14px Tahoma, Arial, Helvetica, sans-serif;
+	color: #333;
+	}
+p {
+	padding: 0;
+	font: normal 13px/22px Tahoma, Arial, sans-serif;
+	color: #555;
+	}
+a {
+	font: bold 12px Tahoma, Arial, Helvetica, sans-serif;
+	color: #013E7F;
+	text-decoration: none;
+}
+	
+/* random classes */
+
+a.moreNews {
+	margin: 10px 0 0 30px;
+	padding: 0;
+	display: block;
+	}
+a.pathways {
+	margin: 10px 0 0 96px;
+	padding: 0;
+	display: block;
+	color: #464646;
+	}
+a.smallBlue {
+	font: normal 10px Tahoma, Arial, Helvetica, sans-serif;
+	color: #609AD4;
+	}
+	
+
+a.oncampus {
+	padding-right: 68px;
+	background: url(/_resources/images/old/2010/oncampus_link.jpg) right no-repeat;
+}
+
+.linkGrey {
+	font: normal 12px Tahoma, Arial, Helvetica, sans-serif;
+	color: #555;
+	}
+.intro {
+	font: bold 13px/22px Tahoma, Arial, sans-serif;
+	color: #555;
+	}
+.p_header {
+	font: 15px/22px Tahoma, Arial, sans-serif;
+	color: #013E7F;
+}
+.newsDeadlineByline {
+	font: normal 14px Tahoma, Arial, sans-serif;
+	color: #C41230;
+	}
+.newsDetailDate {
+	font: normal 14px Tahoma, Arial, sans-serif;
+	color: #02407F;
+	}
+.rightrailNewsHeadline {
+	font: normal 17px Tahoma, Arial, sans-serif;
+	color: #02407F;
+	}
+.rightrailNewsDate {
+	font: bold 13px Tahoma, Arial, sans-serif;
+	color: #333;
+	}
+p.rightrailNewsIntro {
+	margin: 0 0 15px 0;
+	font: normal 12px Tahoma, Arial, sans-serif;
+	color: #555;
+	}
+.smallBlue {
+	font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+	color: #609AD4;
+	}
+.smallRed {
+	font: bold 12px Tahoma, Arial, Helvetica, sans-serif;
+	color: #C41230;
+	}
+
+/* Top Logo / Subnav /Search */
+
+#containerLogoSubnavSearch	{
+	width: 950px;
+	height: 98px;
+	margin: 0;
+	padding: 10px 0 0 0;
+	float: right;
+	border: 0px solid #333;
+	background-color: #FFF;
+}
+#containerLogo	{
+	width: 205px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	}
+#containerSubnavSearch	{
+	width: 650px;
+	margin: 0;
+	padding: 5px 16px 0 0;
+	float: right;
+	}
+#Subnav	{
+	margin: 0;
+	padding: 0;
+	height: 40px;
+    border: 0px solid #333;
+    display: block;
+	}
+#Subnav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	}
+#Subnav li {
+	float: right;
+	margin: 0;
+	padding: 0 2px 0 2px;
+	font: normal 16px Tahoma, Arial, sans-serif;
+	}
+#Subnav li.date {
+	float: right;
+	margin: 0;
+	padding: 0 10px 0 0;
+	font: bold 16px Tahoma, Arial, sans-serif;
+	color: #013E7F;
+	}
+#Subnav a, #Subnav a:link {
+	color: #333;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	_display: inline; /* show to IE */
+	font: normal 16px Tahoma, Arial, sans-serif;
+	text-transform: capitalize;
+	}
+#Subnav li a:hover {
+	color: #013E7F;
+	text-decoration: underline;
+	}
+#Search	{
+	 width: 253px;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	float: right;
+    border: 0px solid #333;
+	}
+#searchBox {
+    width: 253px;
+    height: 25px;
+    margin: 0;
+    background: url(/_resources/images/old/2010/bg_search.png);
+    vertical-align: top;
+	}
+#searchBox #s {
+    float: left;
+    padding: 0 0 0 80px;
+    margin: 7px 0 0 0;
+    border: 0;
+    background: none;
+    font: normal 10px Tahoma, Arial, sans-serif;
+	}
+#searchBox #go {
+    float: right;
+    margin: 0;
+    width: 20px;
+    height: 24px;
+	}
+
+/* Main Navigation */
+
+#containerNav {
+	margin: 0;
+	padding: 0;
+	width: 950px;
+	background-image: url(/_resources/images/old/2010/bg_nav.gif);
+	background-repeat: repeat-x;
+	}
+#Nav {
+	width: 944px;
+	height: 35px;
+	margin: 0px; /* Right and left margin widths set to "auto" */
+	/*SIL*/
+	position: relative;
+	z-index: 100;
+	}
+#Nav .mainNav {
+	margin: 0;
+	padding: 9px 0 0 0;
+	list-style-type: none;
+	}
+/*start SIL*/
+#Nav li.level1 {
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#Nav .level1 a, #Nav .level1 a:link {
+	color: #fff;
+	text-decoration: none;
+	margin: 0;
+	padding: 0 0px 0 25px;
+	display: block;
+	_display: inline; /* show to IE */
+	font: bold 16px Tahoma, Arial, sans-serif;
+	}
+	
+#Nav .level1 a:hover {
+	color: #6f6f6f;
+	}
+
+#Nav .level2_ul {
+	display: none;
+	list-style-type: none;
+	padding: 0px;
+	width: 200px;
+	background-color: #5495D9;
+	background-image: url(/_resources/images/old/2010/footer_shadow.jpg);
+	background-repeat: repeat-x;
+	position: absolute;
+	top: 26px;
+	left: 30px;
+}
+
+#Nav .level2 {
+	border-bottom: 1px solid #69A6C3;
+	/*filter:alpha(opacity=90);-moz-opacity:.90;opacity:.90;*/
+	padding: 0px 0px;
+}
+
+#Nav .level2 a:link, #Nav .level2 a{
+	color: #FFF;
+	background-color: #5495D9;
+	padding: 0px;
+	font: normal 12px Tahoma, Arial, sans-serif;
+	display: block;
+	padding: 7px 15px;
+}
+
+#Nav .level2 a:hover{
+	color: #333;
+	background-color: #B5D6F1;
+	text-decoration: none;
+}
+
+
+	/*
+
+#Nav li {
+	float: right;
+	margin: 0;
+	padding: 0;
+	}
+#Nav a, #Nav a:link {
+	color: #fff;
+	text-decoration: none;
+	margin: 0;
+	padding: 0 30px 0 0;
+	display: block;
+	_display: inline; /* show to IE */
+	/*
+	font: bold 16px Arial, sans-serif;
+	}
+#Nav li a:hover {
+	color: #6f6f6f;
+	}
+#Nav li a#current, #Nav li a#current:link {
+	color: #000;
+	cursor: default;
+	font-weight: bold;
+	border-bottom: 5px solid #999;
+	}
+*/
+
+
+
+/* Alert Bar  */
+#alertBar{
+	background-image: url(/_resources/images/old/2010/bg_alert.jpg);
+	background-repeat: repeat-x;
+	background-color: #C34129;
+	height: 35px;
+	overflow: visible;
+	width: 951px;
+}
+
+#alertBarContent span{
+	font-size: 20px;
+	font-weight: 400;
+}
+
+#alertBarContent{
+	color: #FFF;
+	font-size: 14px;
+	line-height: 32px;
+	padding-left: 25px;
+}
+
+
+/* Content Area */
+
+#containerMainPhoto {
+	margin: 0;
+	padding: 0;
+	width: 950px;
+	height: 287px;
+	}
+#containerMainPhotoTemp02 {
+	margin: 0;
+	padding: 0;
+	width: 950px;
+	height: 182px;
+	}
+#containerInnerContent {
+	margin: 0;
+	padding: 0;
+	width: 950px;
+	}
+#InnerContentLeft {
+	width: 223px;
+	margin: 0;
+	padding: 0 0 100px 0;
+	float: left;
+	/*background-color: #B9D3EA;*/
+	background: url(/_resources/images/old/2010/bg_content_body.jpg) repeat-y;
+	
+	}
+
+/* Content Area */
+
+/***** SPECIFIC FOR p TAGS COMING FROM EDITOR****/
+.editor_content p{
+}
+
+
+/* 3 Column Interior styles */
+
+#threeCol {
+	width: 690px;
+	}
+	
+#threeCol #containerLeftCol {
+	float: left; /* since this element is floated, a width must be given */
+	width: 219px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	padding: 0 22px 0 0; /* padding keeps the content of the div away from the edges */
+	border: 0px solid #333;
+}
+#threeCol #containerRightCol {
+	float: right; /* since this element is floated, a width must be given */
+	width: 219px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	padding: 0 0 0 10px; /* padding keeps the content of the div away from the edges */
+	border: 0px solid #333;
+}
+#threeCol #mainContent { 
+	margin: 0 219px 0 219px; /* the right and left margins on this div element creates the two outer columns on the sides of the page. No matter how much content the sidebar divs contain, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the sidebar spaces when the content in each sidebar ends. */
+	padding: 0 0 0 0; /* remember that padding is the space inside the div box and margin is the space outside the div box */ 
+	border: 0px solid #333;
+} 
+
+
+/* 3 Column Interior styles */
+
+#threeCol_w_border {
+	width: 680px;
+	border: 3px solid #EEE;
+	background-color: #F9F9F9;
+	padding: 0px;
+	padding-top: 7px;
+	position: relative;
+	}
+	
+#threeCol_w_border #containerLeftCol {
+	margin: 0px;
+	padding: 0px;
+	width: 215px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	margin-left: 7px;
+	overflow: hidden;
+	float: left;
+}
+
+#threeCol_w_border #mainContent { 
+	margin: 0px;
+	padding: 0px;
+	width: 215px; /* the right and left margins on this div element creates the two outer columns on the sides of the page. No matter how much content the sidebar divs contain, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the sidebar spaces when the content in each sidebar ends. */
+	float: left;
+	overflow: hidden;
+	margin-left:10px;
+} 
+#threeCol_w_border #containerRightCol {
+	margin: 0px;
+	padding: 0px;
+	float: left; /* since this element is floated, a width must be given */
+	width: 215px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	overflow: hidden;
+	margin-left: 10px;
+}
+
+/* 2 Col sidebar - added SIL to make a 2 column version of the 3 col layout*/
+#twoColSidebar {
+	width: 460px;
+	overflow: hidden;
+	}
+#twoColSidebar #containerLeftCol {
+	float: left; /* since this element is floated, a width must be given */
+	width: 210px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	padding: 0 0px 0 0; /* padding keeps the content of the div away from the edges */
+	border: 0px solid #333;
+}
+#twoColSidebar #containerRightCol {
+	float: left; /* since this element is floated, a width must be given */
+	width: 210px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	padding: 0 0 0 20px; /* padding keeps the content of the div away from the edges */
+	overflow: hidden;
+	border: 0px solid #333;
+}
+
+/*2 COL ADDED BY SIL*/
+#twoCol {
+	width: 690px;
+	}
+#twoCol #containerLeftCol {
+	float: left; /* since this element is floated, a width must be given */
+	width: 320px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	padding: 0 22px 0 0; /* padding keeps the content of the div away from the edges */
+	border: 0px solid #333;
+}
+#twoCol #containerRightCol {
+	float: right; /* since this element is floated, a width must be given */
+	width: 330px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	padding: 0 0 0 10px; /* padding keeps the content of the div away from the edges */
+	border: 0px solid #333;
+}
+
+
+
+#threeCol ul, #twoColSidebar ul, .styled_ul {
+	margin: 0 0 20px 0;
+	padding: 0;
+	list-style-type: none;
+	}
+#threeCol li, #twoColSidebar li, .styled_ul li {
+	width: 190px;
+	margin: 8px 0 0 0;
+	padding: 0px 0 0 12px;
+	background-image: url(/_resources/images/old/2010/bg_rightrail_li.gif);
+	font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+	color: #555;
+	}
+#threeCol li a, .threeCol li a:link, #twoColSidebar li a, .twoColSidebar li a:link, .styled_ul li a:link {
+	text-decoration: none;
+	margin: 0;
+	padding: 6px 0 0 0px;
+	display: block;
+	_display: inline; /* show to IE */
+	font: bold 12px Tahoma, Arial, Helvetica, sans-serif;
+	color: #013E7F;
+	}
+#threeCol a:hover, #twoColSidebar a:hover, .styled_ul a:hover {
+	text-decoration: underline;
+	color: #333;
+	}
+	
+#bluePromo #containerBluePromoLeft {
+	float: left; /* since this element is floated, a width must be given */
+	width: 200px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	padding: 0 20px 0 0; /* padding keeps the content of the div away from the edges */
+	border: 0px solid #333;
+}
+#bluePromo #containerBluePromoRight {
+	float: right; /* since this element is floated, a width must be given */
+	width: 235px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	padding: 0 20px 0 10px; /* padding keeps the content of the div away from the edges */
+	border: 0px solid #333;
+}
+#bluePromo #containerBluePromoMiddle { 
+	margin: 0 260px 0 220px; /* the right and left margins on this div element creates the two outer columns on the sides of the page. No matter how much content the sidebar divs contain, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the sidebar spaces when the content in each sidebar ends. */
+	padding: 0px 0px 0px 0px; /* remember that padding is the space inside the div box and margin is the space outside the div box */ 
+	border: 0px solid #333;
+} 
+#bluePromoContent #contentBluePromoRight, #contentBluePromoLeft, #contentBluePromoMiddle {
+	
+	font: normal 12px/16px Tahoma, Arial, Helvetica, sans-serif;
+	color: #666;
+}
+
+#bluePromo {
+	width: 705px;
+	height: 193px;
+	margin: 0 0 15px -10px;
+	padding: 0;
+	background-image: url(/_resources/images/old/2010/bg_blue_promo.jpg);
+	background-repeat: no-repeat;
+	}
+#bluePromoContent {
+	margin: 0;
+	padding: 25px 0 0 25px;
+	
+	font: bold 19px Tahoma, Arial, Helvetica, sans-serif;
+	color: #fff;
+	}
+#bluePromoShort {
+	width: 681px;
+	height: 117px;
+	margin: 20px 0px 1px 20px;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-image: url(/_resources/images/old/2010/bg_promo_short_back.jpg);
+	}
+#bluePromoShortContent {
+	margin: 0;
+	padding: 25px 15px 0 155px;
+	font: normal 15px Georgia, serif;
+	color: #6186AB;
+	}
+	
+#bluePromoShortImage {
+	padding: 10px 0px 0px 10px;
+	float: left;
+	}
+
+
+#athleticsScores {
+	width: 705px;
+	height: 113px;
+	margin: 0;
+	padding: 0;
+	background-image: url(/_resources/images/old/2010/bg_athletics_scores.jpg);
+	background-repeat: no-repeat;
+	}
+#athleticsScoresContentTop {
+	margin: 0;
+	padding: 12px 0 0 20px;
+	}
+.athleticsScoresHeader {
+	font: bold 17px Tahoma, Arial, Helvetica, sans-serif;
+	color: #9E0B0F;
+	}
+a.athleticsScoresLink {
+	font: normal 12px Tahoma, Arial, Helvetica, sans-serif;
+	color: #14649C;
+	padding: 0 0 0 10px;
+	text-decoration: underline;
+	}
+	
+
+	
+#athleticsBottom{
+	width: 705px;
+	height: 220px;
+	margin: 0;
+	padding: 0;
+	background-image: url(/_resources/images/old/2010/bg_athletics_bottom.jpg);
+	background-repeat: no-repeat;
+	}
+#athleticsBottomContent {
+	float: left;
+	margin: 0;
+	padding: 0;
+	}	
+#athleticsBottomContentLeft {
+	width: 355px;
+	margin: 0;
+	padding: 10px 0 0 15px;
+	float: left;
+	}	
+#athleticsBottomContentRight {
+	width: 300px;
+	margin: 0;
+	padding: 20px 0 0 15px;
+	float: right;
+	border: 0 solid #333;
+	}	
+/* Leftrail */
+
+#Leftrail {
+	margin: 0;
+	padding: 0;
+	}
+#Leftrail ul {
+	margin: 14px 0 20px 0;
+	padding: 0;
+	list-style-type: none;
+	}
+#Leftrail li {
+	width: 223px;
+	margin: 0;
+	padding: 0;
+	padding-top: 3px;
+	padding-bottom: 10px;
+	font: normal 18px Tahoma, Arial, sans-serif;
+	color: #333;
+	background-image: url(/_resources/images/old/2010/bg_leftrail_li.gif);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	}
+#Leftrail li.on {
+	background-image: url(/_resources/images/old/2010/bg_leftrail_li_on.gif);
+	}
+#Leftrail a, #Leftrail a:link {
+	text-decoration: none;
+	margin: 0;
+	padding: 6px 0 0 23px;
+	display: block;
+	_display: inline; /* show to IE */
+	font: normal 13px/14px Tahoma, Arial, sans-serif;
+	color: #464646;
+	}
+#Leftrail a:hover {
+	text-decoration: underline;
+	color: #333;
+	}
+
+/*Added by SIL for facebox form*/
+
+#content_contact_info{
+	font-size: 85%;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+
+#content_contact_info a{
+	font-size: 95%
+}
+
+#content_contact p{
+	background-image: url(/_resources/images/old/2010/bg_alert.jpg);
+	background-repeat: repeat-x;
+	background-color: #C34129;
+	padding: 15px;
+	font-weight: bold;
+	color: #FFF;
+	width: 500px;
+	border-bottom: 2px solid #666;
+}
+
+
+#content_contact .form_field{
+	padding: 15px;
+}
+
+#content_contact label{
+	font-weight: bold;
+}
+
+#content_contact .form_field input,textarea{
+	font-size: 120%;
+	padding: 5px;
+	width: 500px;
+	color: #333;
+	border: 2px solid #CCC;
+	display: block;
+}
+
+#content_contact .submit_container{
+	text-align: center;
+}
+
+#content_contact .form_submit{
+	font-size: 125%;
+	margin-top:10px;
+	height: 36px;
+	width: 128px;
+	border: 0px;
+	cursor: pointer;
+	text-align:center;
+	color: #FFF;
+	font-weight: 700;
+	background: url(/_resources/images/old/2010/btn_green_back.jpg) no-repeat;
+}
+
+/* Main Structure and Rightrail */
+
+#InnerContentRight {
+	width: 720px;
+	margin: 0;
+	padding: 15px 0 0 0;
+	float: left;
+	border: 0px solid #333;
+	}
+
+/*added by sil*/
+.InnerContentRightBack{
+	background-image: url(/_resources/images/old/2010/bg_container_right.jpg);
+	background-repeat: no-repeat;
+}
+
+#containerBreadcrumb {
+	width: 447px;
+	height: 27px;
+	margin: 0 0 0 15px;
+	padding: 0;
+	background-image: url(/_resources/images/old/2010/bg_breadcrumb.gif);
+	background-repeat: no-repeat;
+	border: 0px solid #333;
+	float: left;
+	}
+#containerBreadcrumb p {
+	margin: 0;
+	padding: 6px 0 0 10px;
+	font: normal 12px Georgia, serif;
+	color: #003E7E;
+	}
+/*SIL*/
+#containerBreadcrumb a, #containerBreadcrumb a:link{
+	margin: 0;
+	font: normal 12px Georgia, serif;
+	color: #003E7E;
+}
+#containerBreadcrumb a:hover{
+	text-decoration: underline;
+}
+/*END SIL*/
+#containerButtons {
+	width: 221px;
+	height: 27px;
+	margin: 0 10px 0 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	border: 0px solid #333;
+	float: right;
+	}
+#containerMiddle {
+	width: 417px;
+	margin: 0;
+	padding: 25px 0 0 20px;
+	float: left;
+	}
+#containerMiddleFull {
+	width: 690px;
+	margin: 0;
+	padding: 25px 0 0 20px;
+	float: left;
+	}
+#containerRightrail {
+	margin: 0;
+/*	padding: 50px 0 0 50px;*/
+	float: left;
+	width: 270px;
+	height: 450px;
+	}
+	
+#Rightrail{
+	width: 210px;
+	padding-left: 50px;
+	padding-top: 60px;
+}
+#containerRightrail p {
+	width: 170px;
+	font: normal 13px/19px Tahoma, Arial, sans-serif;
+	color: #6f6f6f;
+	}
+#Rightrail ul {
+	margin: 0 0 20px 0;
+	padding: 0;
+	list-style-type: none;
+	}
+#Rightrail li {
+	width: 190px;
+	margin: 0 0 0 10px;
+	padding: 0;
+	background-image: url(/_resources/images/old/2010/bg_rightrail_li.gif);
+	}
+#Rightrail li a, #Rightrail li a:link {
+	text-decoration: none;
+	margin: 0;
+	padding: 8px 0 0 10px;
+	display: block;
+	_display: inline; /* show to IE */
+	font: normal 13px/14px Tahoma, Arial, sans-serif;
+	color: #464646;
+	}
+#Rightrail a:hover {
+	text-decoration: underline;
+	color: #333;
+	}
+	
+#Rightrail .header_img{
+	display: block;
+}
+	
+/* Campus News Styles */
+
+#newsModule01 {
+	margin: 0 0 13px 0;
+	padding: 10px;
+	width: 395px;
+	height: 117px;
+	background-image: url();
+	}
+#newsModule02 {
+	margin: 0 0 13px 0;
+	padding: 10px;
+	width: 395px;
+	height: 117px;
+	background-image: url(/_resources/images/old/2010/bg_news_module_sm.jpg);
+	background-repeat: no-repeat;
+	}
+.newsHeadline {
+	font: bold 16px/22px Tahoma, Arial, sans-serif;
+	color: #02407F;
+	}
+.newsDate {
+	font: normal 13px/22px Tahoma, Arial, sans-serif;
+	color: #4573A1;
+	}
+.newsIntro {
+	font: normal 12px/22px Tahoma, Arial, sans-serif;
+	color: #555;
+	}
+a.newsFullStory {
+	font: normal 12px/22px Tahoma, Arial, sans-serif;
+	color: #86B6E0;
+	}
+	
+/* Home Styles */
+
+#containerHomeRotate {
+	margin: 0;
+	padding: 0;
+	width: 960px;
+	height: 394px;
+	/*background-image: url(/_resources/images/old/2010/bg_home_rotate_01.jpg);*/
+	/*sil*/
+	position: relative;
+	}
+	/*sil*/
+#containerHomeRotateBack {
+	width: 960px;
+	height: 394px;
+	/*background-image: url(/_resources/images/old/2010/bg_home_rotate_01.jpg);*/
+	position: absolute;
+	z-index: 0;
+	top: 0px;
+	}
+	/*end sil*/
+#containerHomeContent {
+	margin: 0 0 0 10px;
+	padding: 0;
+	width: 950px;
+	height: 542px;
+	background-image: url(/_resources/images/old/2010/bg_home_content.jpg);
+	background-repeat: no-repeat;
+	}
+#HomeContentLeft {
+	margin: 0;
+	padding: 20px 0 0 0;
+	float: left;
+	}
+#HomeContentRight {
+	margin: 0;
+	padding: 0 50px 0 0;
+	float: right;
+	}
+#HomeAudienceNav {
+	height: 340px;
+	margin: 0;
+	background-image: url(/_resources/images/old/2010/bg_home_audience_nav.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	/*sil for background rotation*/
+	z-index: 10;
+	position: relative;
+	}
+#HomeAudienceNav ul {
+	margin: 0px;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	top: 80px;
+	left: 35px;
+	}
+#HomeAudienceNav li {
+	width: 170px;
+	height: 30px;
+	margin: 0px;
+	padding: 0px;
+	}
+#HomeAudienceNav a, #HomeAudienceNav a:link {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	_display: inline; /* show to IE */
+	font: normal 16px/14px Tahoma, Arial, sans-serif;
+	color: #fff;
+	}
+#HomeAudienceNav a:hover {
+	text-decoration: none;
+	color: #333;
+	}
+	
+#News ul {
+	margin: 0 0 0 5px;
+	padding: 0;
+	list-style-type: none;
+	}
+#News li {
+	width: 300px;
+	margin: 0;
+	padding: 7px 34px 15px 25px;
+	font: normal 18px/15px Tahoma, Arial, sans-serif;
+	color: #a1a1a1;
+	background-image: url(/_resources/images/old/2010/bg_news_li.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	}
+#News li .newsInfo {
+	font: bold 11px/14px Tahoma, Arial, sans-serif;
+	color: #333;
+	}
+#News a, #News a:link {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	_display: inline; /* show to IE */
+	font: normal 11px/14px Tahoma, Arial, sans-serif;
+	color: #464646;
+	}
+#News li a:hover {
+	color: #6f6f6f;
+	}
+#Pathways ul {
+	margin: 0 0 0 5px;
+	padding: 0;
+	list-style-type: none;
+	}
+#Pathways li {
+	width: 280px;
+	height: 68px;
+	margin: 0;
+	padding: 5px 0 10px 90px;
+	font: bold 11px Tahoma, Arial, sans-serif;
+	color: #003E7E;
+	background-image: url(/_resources/images/old/2010/bg_pathways_01.png);
+	background-repeat: no-repeat;
+	}
+#Pathways a, #Pathways a:link {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	_display: inline; /* show to IE */
+	font: normal 11px Tahoma, Arial, sans-serif;
+	color: #464646;
+	}
+#Pathways li a:hover {
+	color: #6f6f6f;
+	}
+	
+/* Footer Styles */
+
+#containerFooter	{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: 950px;
+	height: 125px; /* set back to 250 for new footer */
+	background-image: url(/_resources/images/old/2010/bg_footer_inner.gif);
+	background-repeat: no-repeat;
+	}
+#Footer {
+	clear: both;
+	width: 950px;
+	height: 38px;
+	margin: 0;
+	padding: 80px 0 0 0;
+	}
+#Footer ul {
+	width: 875px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: left;
+	}
+#Footer li {
+	float: right;
+	margin: 0;
+	padding: 0 12px 0 12px;
+	font: normal 16px Arial, sans-serif;
+	color: #fff;
+	}
+#Footer li.info {
+	float: right;
+	margin: 0;
+	padding: 0 12px 0 72px;
+	font: normal 11px Tahoma, Arial, sans-serif;
+	color: #fff;
+	}
+#Footer a, #Footer a:link {
+	color: #fff;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	_display: inline; /* show to IE */
+	font: normal 14px Tahoma, Arial, sans-serif;
+	text-transform: capitalize;
+	}
+#Footer li a:hover {
+	color: #013E7F;
+	text-decoration: underline;
+	}
+	
+/* Forms */
+
+#rightrailForm {
+	list-style: none; 
+	margin-left: 0;
+	}
+
+/* contact form */
+.rightrailForm  {
+	width: 170px;
+	margin: 0; 
+	padding: 0;
+	margin: 0;
+	}
+	
+.rightrailForm fieldset {font: normal 11px "Lucida Sans Unicode", Arial, Helvetica, sans-serif;}
+
+.rightrailForm.request fieldset {
+	border-top: 0px #808080 solid; 
+	border-right: 0px #808080 solid; 
+	border-bottom: 1px #808080 dashed; 
+	border-left: 0px #808080 solid; 
+	padding: 3px 3px 15px 3px;
+	}
+	
+.rightrailForm fieldset.extra {
+	margin-top: 0;
+	}
+	
+.rightrailForm legend { 
+	font: bold 14px Tahoma, Arial, Helvetica, sans-serif;
+	padding: 15px 10px 6px 0; 
+	margin-left: 0;
+	color: #000;
+	border: 0;
+	}
+	
+.rightrailForm ul { 
+	margin: 0;  
+	padding: 0;
+	list-style:none;
+	}
+	
+.rightrailForm ul li {
+	clear: both; 
+	background: none; 
+	}
+	
+.rightrailForm ul label { 
+	display: block; 
+	float: left; 
+	width: 175px;
+	padding: 0;
+	}
+	
+.rightrailForm .txtField  {
+	display: block; 
+	float: left; 
+	padding: 3px; 
+	width: 150px; 
+	margin: 2px 0 5px 0;
+	font: 1em "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	color: #666;
+	border: 1px solid #808080;
+	outline: none;
+	}
+	
+.rightrailForm .selectField  {
+	display: block; 
+	float: left; 
+	padding: 3px; 
+	width: 150px; 
+	margin: 2px 0 4px 0;
+	font: 1em "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	color: #666;
+	border: 1px solid #808080;
+	outline: none;
+	}
+	
+.rightrailForm #radio  {
+	margin: 14px 7px 0 0;
+	}
+
+.rightrailForm #radio2  {
+	margin: 10px 0 0 0;
+	}
+	
+.rightrailForm .txtField:hover, .txtField:focus, .txtField:active, .selectField:hover, .selectField:focus, .selectField:active { 
+	border-color: #6F91AE; 
+	background: #bdd7ee;
+	color: #fff;
+	}
+	
+.rightrailForm .send { 
+	width: 100px; 
+	height: 23px; 
+	background: url(/_resources/images/old/2010/bg_submit.gif) no-repeat; 
+	padding: 0 22px 3px 0; 
+	text-align: center; 
+	border: none; 
+	margin: 10px 0 0 0; 
+	border: none;
+	color: #6F91AE;
+	font: 11px "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif; 
+	margin-left: 50px; 
+	color: #6F91AE;   
+	}
+	
+.rightrailForm .send:hover { cursor: pointer; color: #333; }
+
+.rightrailForm .file {
+	display: block; 
+	float: left; 
+	padding: 3px; 
+	width: 260px; 
+	margin: 5px 0 7px 0;
+	font: 1em "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	}
+
+/*form errors*/
+
+.error {
+	border-top: #7dce01 1px solid; 
+	border-bottom: #7dce01 1px solid; 
+	background: #6bb000; 
+	padding: 10px; 
+	margin-bottom: 10px; 
+	text-align: center; 
+	color: #f1ffdb;
+	}
+
+
+.bigPulldownForm .selectField  {
+	display: block; 
+	float: left; 
+	padding: 3px; 
+	width: 400px; 
+	margin: 9px 0 4px 0;
+	font: 14px "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	color: #639cd5;
+	border: 1px solid #808080;
+	outline: none;
+	}
+
+/* Alumni Login */
+
+.alumniLogin {
+	font: normal 11px "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	color: #999;
+	}
+	
+input.alumniLogin  {
+	padding: 3px; 
+	margin: 0px 0 5px 0;
+	font: 1em "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	color: #666;
+	border: 1px solid #808080;
+	outline: none;
+	}
+
+select.sports  {
+	padding: 1px  1px 1px 1px; 
+	margin: 5px 0 5px 0;
+	font: 11px "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	color: #666;
+	border: 1px solid #808080;
+	outline: none;
+	background-color: #fbfbfb ;
+	}
+	
+	
+/*SIL ADDED*/
+#financialAidCalc{
+	width: 705px;
+	height: 235px;
+	margin: 0 0 15px -10px;
+	padding: 0;
+	background-image: url(/_resources/images/old/2010/bg_financialaid_calc.jpg);
+	background-repeat: no-repeat;
+	font: normal 14px/16px Tahoma, Arial, Helvetica, sans-serif;
+	color: #666;
+	position: relative;
+}
+
+#financialAidCalc .calc_input{
+	padding: 5px;
+	font: normal 14px/16px Tahoma, Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+#financialAidCalc .calcLeft{
+	padding-top: 40px;
+	padding-left: 60px;
+	float: left;
+	width: 420px
+}
+
+#financialAidCalc .amountRight{
+	float: right;
+	margin-top: 20px;
+	width: 200px;
+}
+
+#financialAidCalc .amountRight span{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#financialAidCalc .amountRight .amountTotal{
+	padding-left: 15px;
+	padding-top: 10px;
+	font: bold 35px Georgia, serif;
+	color: #C41230;
+}
+
+#financialAidCalc .calc_field_label{
+	text-align: right;
+}
+
+.submit_button{
+	margin-left: 15px;
+	margin-top: 25px;
+}
+
+.question_submit{
+	font-size: 125%;
+	margin-top:10px;
+	height: 36px;
+	width: 128px;
+	border: 0px;
+	cursor: pointer;
+	text-align:center;
+	color: #FFF;
+	font-weight: 700;
+	background: url(/_resources/images/old/2010/btn_green_back.jpg) no-repeat;
+}
+
+
+/* ATHLETICS */
+#latest_results{
+	margin-top: 10px;
+}
+
+#latest_results h3{
+	font-size: 150%;
+}
+
+#latest_results h4{
+	color: #013E7D;
+	background: none;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+#latest_results h5{
+	margin: 0px;
+}
+
+#latest_results p{
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+.formatted_game_score{
+	line-height: 1.1em;
+}
+
+.formatted_game_score .game_date{
+	font-weight: bold;
+	border-bottom: 1px solid #CCC;
+	padding-top: 10px;
+	color: #333;
+	font-size: 110%;
+}
+
+.formatted_game_score .game_score{
+	padding-left: 5px;
+}
+
+.formatted_game_score .game_2_title{
+	margin-left: -5px;
+	font-weight: bold;
+	font-size: 10px;
+	padding-top: 5px;
+	color: #444;
+}
+
+.formatted_game_score .box_score{
+	font-size: 11px;
+	padding-left: 3px;
+}
+
+.email_image{border:none;margin-bottom:-3px;}
+
+/*Faculty Pages */
+.faculty_holder{
+	clear: both;
+	border-bottom: 1px solid #CCC;
+	padding: 15px;
+}
+
+.faculty_img_holder{
+	border: 1px solid #DDD;
+	padding: 2px;
+	line-height: 0px;
+	float: left;
+	margin-right: 15px;
+}
+
+.faculty_info{
+	float: left;
+}
+
+.faculty_info .title{
+	font-size: 90%;
+	font-weight: bold;
+}
+
+/* Calendar */
+
+#calContainer{
+	width:470px;
+}
+
+#events_sidebar
+{
+	width:225px;
+}
+#events_sidebar #calMain {
+	float: right;  
+	width: 190px;
+	}
+#events_sidebar #calMain p {
+	margin: 5px 0 18px 0;
+	padding: 0 50px 0 0;
+	font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+	color: #666;
+	}
+#calMain .event_link a{
+	font: normal 14px Tahoma, Arial, Helvetica, sans-serif;
+	color: #6AA2D5;
+	text-decoration: underline;
+	}
+#calMain a.viewAll {
+	font: normal 15px Tahoma, Arial, Helvetica, sans-serif;
+	color: #FF7011;
+	text-decoration: none;
+	}
+#events_sidebar #calDate {
+	float: left; 
+	width: 35px;
+	margin-top:5px;
+	}
+
+#events_sidebar #calDateCont {
+	width: 30px;
+	height: 39px;
+	margin: 0 0 0 0px;
+	padding: 0;
+	background-image: url(/_resources/images/old/2010/bg_cal_date.gif);
+	text-align: center;
+	}
+#calMo {
+	margin: 0;
+	padding: 2px 0 0 0;
+	height: 8px;
+	font: bold 10px Trebuchet MS, Trebuchet, Verdana, Arial;
+	color: #fff;
+	text-transform: uppercase;
+	}
+#calDay {
+	margin: 0;
+	padding: 2px 0 0 0;
+	font: normal 17px Georgia, "Times New Roman", Times, serif;
+	color: #fff;
+	}
+	
+#calDatesmall {
+	 float: left; 
+	 width: 50px;
+	}
+
+#calDateContsmall {
+	width: 30px;
+	height: 55px;
+	margin: 0;
+	padding: 0;
+	background-image: url(/_resources/images/old/2010/bg_cal_date.gif);
+	background-repeat: no-repeat;
+	text-align: center;
+	}
+#calMosmall {
+	margin: 0;
+	padding: 4px 0 0 0;
+	height: 8px;
+	font: bold 10px Trebuchet MS, Trebuchet, Verdana, Arial;
+	color: #fff;
+	text-transform: uppercase;
+	}
+#calDaysmall {
+	margin: 0;
+	padding: 2px 0 0 0;
+	font: normal 17px Georgia, "Times New Roman", Times, serif;
+	color: #fff;
+	}
+h2.cal {
+	margin: 5px 0 20px 0;
+	padding: 0 0 0 10px;
+	font: normal 24px Georgia, "Times New Roman", Times, serif;
+	color: #00629F;
+	}
+#events_sidebar h6.calDate {
+	margin: 0 0 5px 0;
+	padding: 0;
+	font: bold 12px Tahoma, Arial, Helvetica, sans-serif;
+	color: #07466F;
+	}
+h6.calTitle {
+	margin: 0 0 5px 0;
+	padding: 0;
+	font: bold 17px Tahoma, Arial, Helvetica, sans-serif;
+	color: #6AA2D5;
+	}
+h6.calTime {
+	margin: 0 0 5px 0;
+	padding: 0;
+	font: normal 16px Tahoma, Arial, Helvetica, sans-serif;
+	color: #00629F;
+	}
+h6.calLoc {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font: normal 16px Tahoma, Arial, Helvetica, sans-serif;
+	color: #00629F;
+	}
+
+
+/*============================================================
+// 	TABS
+//============================================================*/
+.page_tab{
+	padding: 10px;
+}
+#page_tabs_container{
+	margin-top: 20px;
+	position: relative;
+}
+
+#page_tabs{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	height: 25px;
+	background-image: url(/_resources/images/old/2010/tab_back.jpg);
+	background-repeat: repeat-x
+}
+
+#page_tabs li{
+	float: left;
+	margin: 0px 0px;
+}
+
+#page_tabs .tab_left_back{
+	height: 24px;
+	width: 5px;
+	background-image: url(/_resources/images/old/2010/tab_left_back.jpg);
+	float: left;
+	margin-left: 10px;
+}
+
+#page_tabs .tab_right_back{
+	height: 24px;
+	width: 5px;
+	background-image: url(/_resources/images/old/2010/tab_right_back.jpg);
+	float: left;
+}
+
+#page_tabs .tab_rpt{
+	height: 24px;
+	background-image: url(/_resources/images/old/2010/tab_rpt.jpg);
+	background-repeat: repeat-x;
+	float: left;
+}
+
+#page_tabs li a{
+	display: block;
+	padding: 7px 15px 2px 15px;
+	border: 0px;
+	color: #666;
+}
+
+#page_tabs .active{
+	border-bottom: 1px solid #FFF;
+}
+
+#page_tabs .active a{
+	color: #013E7F;
+}
+
+
+/*footer*/
+#footer{
+	background-color: #5495D9;
+	border: 1px solid #5495D9;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	background-image: url(/_resources/images/old/2010/footer_shadow.jpg);
+	background-repeat: repeat-x;
+}
+
+#footer ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#footer ul li{
+	height: 35px;
+	line-height: 35px;
+	display: inline;
+	padding: 30px;
+}
+
+#footer ul li.border
+{
+	background-image: url(/_resources/images/old/2010/footer_menu_border.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 55px;
+}
+
+#footer ul li a{
+	font-size: 14px;
+	color: #FFF;
+	font-weight: normal;
+}
+
+#footer div{
+	color: #EEE;
+	padding-top: 10px;
+	font-size: 11px;
+}
+
+#xpress_head_link{
+	width: 140px;
+	height: 23px;
+	background-image: url(/_resources/images/old/2010/mx_icon.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	line-height: 23px;
+}
+
+/*Homepage styles*/
+#home_container{
+	font-family: tahoma;
+}
+
+#home_audience_nav{
+	width: 225px;
+	float: left;
+	background-color: #DA0024;
+	height: 400px;
+	background-image: url(/_resources/images/old/2010/home/home_red_links_back.jpg);
+	background-repeat: repeat-x;
+}
+
+#home_audience_nav ul{
+	padding: 0px;
+	margin: 0px;	
+	list-style: none;
+	padding-left: 0px;
+	margin-top: 25px;
+}
+
+#home_audience_nav ul li{
+	padding: 10px 0px 10px 20px;
+}
+
+#home_audience_nav ul li a{
+	font-family: tahoma;
+	color: #FFF;
+	font-size: 23px;
+	font-weight: normal; 
+}
+
+#home_scroller{
+	width: 725px;
+	float: right;
+	background-color: #CCC;
+	height: 400px;
+	background-image: url('/_resources/images/old/2010/home/loading.gif');background-repeat:no-repeat;background-position: center center;
+}
+
+.home_image_scroller{display:none;height:400px;width:725px;}
+
+#quick_links{
+	float: left;
+	width: 224px;
+	background-color: #B5D6F1;
+	background-image: url(/_resources/images/old/2010/home/home_quick_links_top.jpg);
+	background-repeat: repeat-x;
+	border-right: 1px solid #90B1CC;
+	padding-bottom: 50px;
+}
+
+#quick_links h3{
+	font-size: 23px;
+	margin: 10px 0px;
+	padding: 0px;
+	margin-left: 18px;
+	color: #000;
+}
+
+#quick_links ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	margin-left: 35px;
+	margin-bottom: 10px;
+}
+
+#quick_links ul li{
+	color: #003483;
+}
+
+#quick_links ul li.head, #quick_links ul li.head a{
+	font-weight: bold;
+}
+
+#quick_links ul li a.sub{
+	color: #333;
+	font-weight: normal;
+}
+
+#quick_links ul li a:hover{
+	text-decoration: underline;
+}
+
+#today_at_malone, #news_and_events{
+	float: left;
+	width: 345px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+#news_and_events{
+}
+
+#today_at_malone h3, #news_and_events h3{
+	color: #333;
+	font-size: 22px;
+	margin-left: 85px;
+}
+
+#today_at_malone .post, #news_and_events .post{
+	clear: both;
+	margin-top: 20px;
+}
+
+#today_at_malone .post .img_holder, #news_and_events .post .img_holder{
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-top:0px;
+}
+
+#today_at_malone .post .img_holder .img_background, #news_and_events .post .img_holder .img_background{
+	background-image:url('/_resources/images/old/2010/home/homeft_greywshadow.gif');
+	background-repeat: no-repeat;
+	position:absolute;
+	z-index:5;
+	width:74px;
+	height:75px;
+	margin-top:-4px;
+}
+
+#today_at_malone .post .img_holder .img_div, #news_and_events .post .img_holder .img_div{
+	width:64px;
+	height:64px;
+	margin-top:0px;
+	margin-left:5px;
+}
+
+#today_at_malone .post .img_holder .img_thumb, #news_and_events .post .img_holder .img_thumb{
+	width:64px;
+	height:64px;
+	border: none;
+}
+
+#today_at_malone .post .content, #news_and_events .post .content{
+	float: left;
+	margin-left: 5px;
+}
+
+#today_at_malone .post .content{
+	width: 230px;
+}
+
+#news_and_events .post .content{
+	width: 260px;
+}
+
+#today_at_malone .post h4, #news_and_events .post h4{
+	color: #003483;
+	background: none;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+#today_at_malone .post h4 a{
+	font-size: 14px;
+	line-height: 25px;
+}
+
+
+#news_and_events .post h4{
+	font-size: 12px;
+	line-height: 15px;
+}
+
+#today_at_malone .post p, #news_and_events .post p{
+	margin-top: 0px;
+}
+
+#today_at_malone .post .content ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 15px;
+}
+
+#today_at_malone .post .content ul li{
+	line-height: 1.2em;
+}
+
+#today_at_malone .post .content ul li a{
+	font-weight: normal;
+}
+
+#home_content{
+	background-image: url(/_resources/images/old/2010/home/home_content_shadow.jpg);
+	background-repeat: repeat-x;
+}
+#copyrightlogo {
+color:#EEEEEE;
+font-size:11px;
+padding-top:10px;
+}
+/*Map styles - added mrm 12/23/2010 */
+.buildings_ul{
+	list-style: none;
+	margin: 0px;
+	padding: 5px;
+}
+
+.buildings_ul li{
+	line-height: 1em;
+	padding: 0px;
+	margin: 0px;
+}
+
+.offices_ul{
+	list-style:none; 
+	padding-left: 15px; 
+	padding-bottom: 5px; 
+	margin:0px;
+}
+
+.offices_ul li{
+	padding: 3px;
+	line-height: 1em;
+}
+
+.offices_ul li a{
+	padding: 0px;
+	margin: 0px;
+	line-height: 1em;
+}
+

@@ -1,0 +1,43 @@
+@import url("/_resources/css/main.css");
+
+body{
+  background:#FFF url("/_resources/ou/editor/main-bg.png") no-repeat;
+  margin:357px 78px 3px 428px;
+  width:400px;
+}
+
+div{
+  border:2px dashed #DDD;
+}
+
+p {
+    color: #555555;
+    font-size: 116.66%;
+    line-height: 1.43;
+    margin: 16px 0px 16px 0;
+}
+
+h3 {
+    color: black;
+    font-size: 116.66%;
+    font-weight: bold;
+}
+
+.intro {
+    color: #707070;
+    font-family: Georgia,serif;
+    font-size: 158.33%;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.sub-intro {
+    color: #707070;
+    font-size: 116.66%;
+    line-height: 1.4;
+}
+
+.narrower {
+    margin-right: 90px;
+}

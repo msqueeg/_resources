@@ -1,0 +1,55 @@
+<title>New News Item</title>
+
+<variable-list>
+	<variable name="title" prompt="Page Title" alt="Give your page a title."></variable>
+	<variable name="keywords" prompt="Keywords" rows="2" alt="Words that categorize your new page for search engines.">Some keywords here</variable>
+	<variable name="description" prompt="Description" rows="2" alt="A brief description of the page content.">Description</variable>
+	
+	<variable name="rsstitle" prompt="RSS Title" alt="The title given to the RSS item."></variable>
+	<variable name="rssdesc" prompt="RSS Description" alt="The description given to the RSS item." rows="3"></variable>
+	<variable name="rssdate" prompt="RSS Date / Release" alt="The date / release number to be placed on the page."></variable>
+	<variable name="rssimage" prompt="RSS Image" alt="The image to be used for the RSS item." type="filechooser" path="/images"></variable>
+	<variable name="rssimgdesc" prompt="RSS Image description" alt="A short description for the image for your RSS item"></variable>
+	
+	<variable name="tags" type="select" prompt="Category" alt="Select the tag your news feed belongs to.">
+		<option value="nofilter" selected="true">No Filter</option>
+		<option value="visualarts" selected="false">Visual Arts</option>
+		<option value="instrumentalmusic" selected="false">Instrumental Music</option>
+		<option value="choralvocal" selected="false">Choral/Vocal Music</option>
+		<option value="academics" selected="false">Academics</option>
+		<option value="religion" selected="false">Religion</option>
+		<option value="infomeetings" selected="false">Informational Meetings</option>
+		<option value="infomeetingsgradstudies" selected="false">Graduate Studies</option>
+		<option value="infomeetingsdegree" selected="false">Degree Completion</option>
+		<option value="infomeetingsnursing" selected="false">Nursing Degree Completion</option>
+		<option value="studentlife" selected="false">Student Life</option>
+		<option value="theater" selected="false">Theater</option>
+		<option value="business" selected="false">Business</option>
+		<option value="events" selected="false">Events</option>
+		<option value="bignews" selected="false">Big News</option>
+	</variable>
+	
+	<variable name="autonavigation" prompt="Add Navigation Item" type="select" alt="Add the page to the Left navigation file automatically.">
+		<option value="true">Yes</option>
+		<option value="false">No</option>
+	</variable> 
+	
+	<variable name="b1" display="no" prompt="" alt=""><tag></variable>
+	<variable name="b2" display="no" prompt="" alt=""></tag></variable>
+</variable-list>
+
+<template-list>
+	<template prompt-prefix="New RSS Item" group="*inherit*" extension="pcf" display-extension="no"	publish="no" autonav="{autonavigation}"
+	rss-feed="/_resources/rss/news.xml" 
+    rss-title="{rsstitle}" 
+    rss-description="{rssdesc}" 
+    rss-media="{rssimgdesc}^^{rssimage}^^{rssimgdesc}^^{rssimage}^^{mkeywords}" 
+    rss-extra="{b1}{tags}{b2}">news-item.tmpl</template>
+</template-list>
+
+<navigation-list>
+	<navigation name="true" path="zz-sidenav.inc" group="everyone" publish="yes">
+	<li><a href="{ox_autonav:shorturl}">{title}</a></li>
+	</navigation>
+	<navigation name="false" path="zz-sidenav.inc" group="everyone" publish="yes"></navigation>
+</navigation-list>

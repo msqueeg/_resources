@@ -1,0 +1,13 @@
+<script type="text/javascript">
+$(document).bind('beforeReveal.facebox', function() {
+    $('#facebox .content').width('950px');
+});
+
+$(".catalog").click(function () {
+	var addressValue = $(this).attr("href");
+	alert (addressValue);
+	$('#iFrm').attr('src', addressValue);
+	//document.getElementById('iFrm').reload();
+	$(this).attr("href", "#info");
+});
+</script>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+	<headcode></headcode>
+	<bodycode></bodycode>
+	<footcode></footcode>
+	
+	<!-- com.omniupdate.properties -->
+	<title><!--%echo var="title" --></title>
+	<!-- /com.omniupdate.properties -->
+	
+	<config>
+		<parameter name="pagetype">form</parameter>
+		<!-- com.omniupdate.properties -->
+		<parameter name="breadcrumb-content" type="text" prompt="Breadcrumb Content"><!--%echo var='title' --></parameter>
+		<parameter name="action-call" type="radio" prompt="Enable Call to Action widget" group="Everyone">
+			<option value="true" selected="true">On</option>
+			<option value="false" selected="false">Off</option>
+		</parameter>
+		<parameter name="formid" type="select" prompt="Select a Form" alt="Select the form that you want to publish." group="Everyone">
+			<option value="2" selected="true">Multicultural Overnighter</option>
+			<option value="4" selected="false">Commuter Form</option>
+			<option value="5" selected="false">Chapel Excuse: Academic</option>
+			<option value="6" selected="false">Chapel Excuse: Non-Academic Reason</option>
+			<option value="7" selected="false">Contact the Webmaster</option>
+			<option value="8" selected="false">Let Us Know</option>
+			<option value="9" selected="false">Saturday Sneak Peeks</option>
+			<option value="10" selected="false">Research Symposium Submission Form</option>
+			<option value="11" selected="false">Contact Student Senate</option>
+			<option value="12" selected="false">Service Learning Trip Application</option>
+			<option value="14" selected="false">Service Learning Post Trip Evaluation Form</option>
+			<option value="15" selected="false">Service Learning Leader Evaluation Form</option>
+			<option value="16" selected="false">Graduate Studies Information Meeting RSVP</option>
+			<option value="17" selected="false">RN to BSN Information Meeting RSVP</option>
+			<option value="18" selected="false">Accelerated Degree Information Meeting RSVP</option>
+			<option value="19" selected="false">Staff Fellowship Nomination Form</option>
+			<option value="20" selected="false">Staff Fellowship Survey</option>
+			<option value="21" selected="false">Senior Banquet Registration</option>
+			<option value="22" selected="false">Admissions Custom Visit Form</option>
+			<option value="24" selected="false">Discover Day Registration Form</option>
+			<option value="26" selected="false">Alumni Award Nomination</option>
+			<option value="27" selected="false">Alumni Information Form</option>
+			<option value="28" selected="false">Art Portfolio Registration</option>
+			<option value="31" selected="false">Chorale:Concert Request Formm</option>
+			<option value="33" selected="false">Early Alert Referral Faculty- Multiple Students</option>
+			<option value="34" selected="false">Early Alert Referral Faculty-Single Student</option>
+			<option value="35" selected="false">Early Alert Referral Form Staff-Multiple Student</option>
+			<option value="36" selected="false">Early Alert Referral Form Staff-Single Student</option>
+			<option value="37" selected="false">Faculty and Staff Library Card Application</option>
+			<option value="38" selected="false">Faculty Report</option>
+			<option value="44" selected="false">Graduate Billing Information Survey FA 2010</option>
+			<option value="45" selected="false">Graduate Billing Information Survey SP 2010</option>
+			<option value="46" selected="false">Graduate Programs:Request For Information</option>
+			<option value="47" selected="false">Graduate: Not Interested</option>
+			<option value="48" selected="false">ILLform</option>
+			<option value="49" selected="false">Instruction Request</option>
+			<option value="51" selected="false">Library Orders</option>
+			<option value="53" selected="false">Malone-Summer Camp Fair Recruiter Registration</option>
+			<option value="54" selected="false">Malone University Event Technical Setup Request</option>
+			<option value="55" selected="false">MMP:Request For Information</option>
+			<option value="56" selected="false">NOTED Registration Form</option>
+			<option value="58" selected="false">Online Learning: Inquiry</option>
+			<option value="59" selected="false">Peer Tutoring Request</option>
+			<option value="60" selected="false">Photograph Permission Form</option>
+			<option value="61" selected="false">Post baccalaureate Teaching (MT3) Application</option>
+			<option value="63" selected="false">Campus Carnival for Kids Registration</option>
+			<option value="64" selected="false">Publication Request Form</option>
+			<option value="67" selected="false">SoSc 211 Cross Cultural Experience Trip</option>
+			<option value="68" selected="false">Stark County Collegiate Job Fair Student and Alumni</option>
+			<option value="69" selected="false">Future Scholars Registration</option>
+			<option value="70" selected="false">PDP: Request For Information</option>
+			<option value="73" selected="false">Help Desk Request</option>
+			<option value="79" selected="false">Discover Day Registration</option>
+		</parameter>
+		<sidebar-widgets>
+			<parameter name="news-widget" type="select" prompt="News Feed" alt="Select which news feed to use for the sidebar news widget." group="Everyone">
+				<option value="disabled" selected="false">None</option>
+				<option value="nofilter" selected="true">All Feeds</option>
+				<option value="visualarts" selected="false">Visual Arts</option>
+				<option value="instrumentalmusic" selected="false">Instrumental Music</option>
+				<option value="choralvocal" selected="false">Choral/Vocal Music</option>
+				<option value="academics" selected="false">Academics</option>
+				<option value="religion" selected="false">Religion</option>
+				<option value="infomeetings" selected="false">Informational Meetings</option>
+				<option value="infomeetingsgradstudies" selected="false">Informational Meetings -- Graduate Studies</option>
+				<option value="infomeetingsdegree" selected="false">Informational Meetings -- Degree Completion</option>
+				<option value="infomeetingsnursing" selected="false">Informational Meetings -- Nursing Degree Completion</option>
+				<option value="studentlife" selected="false">Student Life</option>
+				<option value="theater" selected="false">Theater</option>
+				<option value="business" selected="false">Business</option>
+				<option value="events" selected="false">Events</option>
+				<option value="bignews" selected="false">Big News</option>
+			</parameter>
+			<parameter name="events-widget" type="select" prompt="Events Feed" alt="Select which calendar feed to use for the sidebar events widget." group="Everyone">
+				<option value="disabled" selected="true">None</option>
+				<option value="012b-1c56546c-000006e0" selected="false">Academics</option>
+				<option value="012a-d3959e15-000000ba" selected="false">BSN</option>
+				<option value="012a-d393043c-000000af" selected="false">Business (Undergraduate)</option>
+				<option value="012b-1c1635e3-000006bd" selected="false">Campus Ministries</option>
+				<option value="012a-d3902829-000000a4" selected="false">Communications</option>
+				<option value="012a-d3943491-000000b3" selected="false">Education (Undergraduate)</option>
+				<option value="012a-d394d622-000000b7" selected="false">Education Workshops</option>
+				<option value="012a-d39203a0-000000ab" selected="false">History, Philosophy and Social Sciences</option>
+				<option value="012a-d3908e3f-000000a5" selected="false">Language and Literature</option>
+				<option value="012a-d394b3fa-000000b6" selected="false">MAED Counseling</option>
+				<option value="012a-d39486ee-000000b4" selected="false">MAED Education</option>
+				<option value="012a-d3940118-000000b2" selected="false">MAOL</option>
+				<option value="012a-d390d7b5-000000a6" selected="false">Mathematics and Computer Science</option>
+				<option value="012a-d39295ca-000000ad" selected="false">MATS (Theology Graduate Program)</option>
+				<option value="012a-d393dea9-000000b1" selected="false">MBA Program</option>
+				<option value="012a-d3939d5a-000000b0" selected="false">Management Program</option>
+				<option value="012a-d395cbea-000000bb" selected="false">MSN (Graduate Program)</option>
+				<option value="012a-d3912670-000000a7" selected="false">Music</option>
+				<option value="012a-d3914676-000000a8" selected="false">Natural Sciences</option>
+				<option value="012a-d3954dd2-000000b9" selected="false">Nursing (Undergraduate)</option>
+				<option value="012a-d3918888-000000a9" selected="false">Psychology</option>
+				<option value="012b-1c15a02a-000006bc" selected="false">Public Events</option>
+				<option value="012a-d392b837-000000ae" selected="false">Social Work</option>
+				<option value="012b-1c1661dd-000006be" selected="false">Student Events</option>
+				<option value="012a-d3924999-000000ac" selected="false">Theology (Undergraduate)</option>
+				<option value="012a-d391c323-000000aa" selected="false">Visual Arts</option>
+			</parameter>
+			<parameter name="twitter-widget" type="select" prompt="Twitter widget" group="Everyone">
+				<option value="disabled" selected="true">None</option>
+				<option value="malone_univ" selected="false">Malone University</option>
+				<option value="pioneerdeb" selected="false">pioneerdeb</option>
+			</parameter>
+			<parameter name="twitter-count" type="select" prompt="Twitter count" alt="If twitter widget is enabled, this is the number of twiter posts to display at a time." group="Everyone">
+				<option value="1" selected="false">1</option>
+				<option value="2" selected="false">2</option>
+				<option value="3" selected="false">3</option>
+				<option value="4" selected="true">4</option>
+			</parameter>
+		</sidebar-widgets>	
+		<parameter name="facebook-widget" type="select" prompt="Enable Facebook widget" group="Everyone">
+			<option value="disabled" selected="false">Disable</option>
+			<option value="/pages/Malone-University-Admissions/117133195013019" selected="false">Admissions</option>
+			<option value="/pages/Malone-University-Alumni/8555322857" selected="false">Alumni</option>
+			<option value="/malonepioneers" selected="false">Athletics</option>
+			<option value="/pages/Malone-University-Career-Development/105656021061" selected="false">Career Development Center</option>
+			<option value="/mucounseling" selected="false">Dept of Counseling and Human Development</option>
+			<option value="/pages/Malone-University-Department-of-History-Philosophy-and-Social-Sciences/383183667664?ref=ts" selected="false">Dept of History, Philosophy, and Social Sciences</option>
+			<option value="/Malone-University-Department-of-Theology/112570448801982" selected="false">Department of Theology</option>			
+			<option value="/pages/Malone-University-Library/144877622243331" selected="false">Library</option>
+			<option value="/pages/Malone-University/27317928538" selected="true">Malone University</option>
+			<option value="/pages/Malone-University-SAC-Student-Activities-Council/114031788621759" selected="false">Student Activities Council</option>
+			<option value="/pages/Malone-University-Softball/200680029964013" selected="false">Softball</option>
+		</parameter>
+		<!-- /com.omniupdate.properties -->
+	</config>
+	
+	<metadata>
+		<!-- com.omniupdate.properties -->
+		<meta name="keywords" content="<!--%echo var="keywords" -->" />
+		<meta name="description" content="<!--%echo var="description" -->" />
+		
+		<!-- /com.omniupdate.properties -->
+	</metadata>	
+	
+	<maincontent>
+		<hero>
+			<!-- com.omniupdate.div label="hero" group="secure" button="707" -->
+				<img src="/images/hero/admission_hero.jpg" width="694" height="324" alt="Visual Arts image" />
+			<!-- /com.omniupdate.div -->
+		</hero>
+		<page-title>
+			<!-- com.omniupdate.div label="title" group="Everyone" button="707" -->
+			<!-- com.omniupdate.editor csspath="/_resources/ou/editor/title.css" width="950" -->
+			<h1><!--%echo var="title" --></h1>
+			<!-- /com.omniupdate.div --><!-- broke h1 out for consistency -->
+		</page-title>
+		<interior>
+			<!-- com.omniupdate.div label="content" group="Everyone" button="707" -->
+			<!-- com.omniupdate.editor csspath="/_resources/ou/editor/maincontent.css" width="950" -->
+			<p class="intro narrower">Familiarize yourself with the undergraduate admision requirements and apply.</p>
+			<h3>Useful information:</h3>
+			<p><a href="http://www.malone.edu/document.docx">Word Doc</a></p>
+			<p class="narrower">Five or six years after we were married, we found our hearts turned to the Lord repeatedly for the <a href="http://www.google.com">young people of the church and at large</a> who had the call of the Lord on their hearts to preach, but for whom no way was open for the exercise of their gift. We discovered that the local young people who taught Bible classes, and led <a href="/student-life/">young people's meetings</a>, cottage meetings, and prayer meetings were developing into Christian workers, and gave promise of becoming preachers and missionaries. The spirit, therefore, impressed our hearts to open a small school in which the Bible could be taught every day, and supervision given in practical Christian work, such as visiting the sick, calling in homes, and personal evangelism.</p>
+			<!-- /com.omniupdate.div -->
+		</interior>
+	</maincontent>
+	<sidebar>
+		<apply>
+			<!-- com.omniupdate.div label="sidebar-apply" group="Everyone" button="707" -->
+			<!-- com.omniupdate.editor csspath="/_resources/ou/editor/sidebar-apply.css" width="950" --><h2 class="hide">File application</h2>
+			<a href="#" id="apply">
+				<strong>I'm ready to<br />apply!</strong>
+				Apply Now
+			</a>
+			<!-- /com.omniupdate.div -->
+		</apply>
+	</sidebar>
+</document>
+

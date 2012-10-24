@@ -1,0 +1,22 @@
+<title>New One Column Page</title>
+
+<variable-list>
+	<variable name="title" prompt="Page Title" alt="Give your page a title."></variable>
+	<variable name="keywords" prompt="Keywords" rows="2" alt="Words that categorize your new page for search engines.">Some keywords here</variable>
+	<variable name="description" prompt="Description" rows="2" alt="A brief description of the page content.">Description</variable>
+	<variable name="autonavigation" prompt="Add Navigation Item" type="select" alt="Add the page to the Left navigation file automatically.">
+		<option value="true">Yes</option>
+		<option value="false">No</option>
+	</variable> 
+</variable-list>
+
+<template-list>
+	<template prompt-prefix="New Page" group="*inherit*" extension="pcf" display-extension="no"	publish="no" autonav="{autonavigation}">faculty-listing.tmpl</template>
+</template-list>
+
+<navigation-list>
+	<navigation name="true" path="zz-sidenav.inc" group="everyone" publish="no">
+	<li><a href="{ox_autonav:shorturl}">{title}</a></li>
+	</navigation>
+	<navigation name="false" path="zz-sidenav.inc" group="everyone" publish="no"></navigation>
+</navigation-list>

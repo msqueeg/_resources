@@ -1,0 +1,6 @@
+@import url("/_resources/css/main.css");
+
+body{
+  background:#FFF url("/_resources/ou/editor/main-bg.png") no-repeat;
+  margin:1px 2px 3px 4px;
+}

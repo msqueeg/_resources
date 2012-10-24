@@ -1,0 +1,6 @@
+<!-- promotional banners:
+blue: general contact
+green: Financial Aid
+orange: student Life
+purple: Applications/Admissions
+red: Giving/Advancement

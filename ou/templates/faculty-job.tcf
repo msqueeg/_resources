@@ -1,0 +1,33 @@
+<title>New Faculty Job Posting</title>
+
+<variable-list>
+	<variable name="pagetype" type="select" group="Everyone" prompt="Select a page type" alt="What kind of page would you like to create?" output="xml">
+		<option value="2column" selected="true">2 Column</option>
+	</variable>
+	
+	<variable name="category" alt="what category should this job be advertised under" type="select">
+			<option value="/_resources/rss/facjobs.xml">Full-Time Faculty</option>
+			<option value="/_resources/rss/adjunctjobs.xml">Part Time Faculty</option>
+			<option value="/_resources/rss/adminjobs.xml">Administrator</option>
+			<option value="/_resources/rss/staffjobs.xml">Staff</option>
+	</variable>
+	<variable name="position" type="select" prompt="Position" alt="The type of position that is open.">
+		<option value="Associate/Assistant Professor" selected="true">Associate/Assistant Professor</option>
+		<option value="Assistant Professor" selected="false">Assistant Professor</option>
+		<option value="Open Rank" selected="false">Open Rank</option>
+		<option value="Adjunct" selected="false">Adjunct faculty</option>
+		<option value="Staff" selected="false">Staff</option>
+	</variable>
+	<variable name="globalnav" type="select" group="Everyone" prompt="Section Navigation" alt="Select to display the section navigation menu" output="xml">
+		<option value="off" selected="false">Off</option>
+		<option value="on" selected="true">On</option>
+	</variable>
+	<variable name="dept" type="text" prompt="Department" alt="Department or Academic Unit where the position is located."></variable>
+
+	<variable name="keywords" prompt="Page Keywords" alt="List a few short keywords describing your page.">Malone University, Faculty, Employment</variable>
+	<variable name="description" prompt="Page Description" alt="Write a short description of the contents of your page.">Malone University is seeking to hire an outstanding teacher.</variable>
+</variable-list>
+
+<template-list>
+	<template prompt-prefix="New Page" filename="position-dept" preferred-redirect="yes" extension="pcf" rss-feed="{category}" rss-title="{position}^^{dept}" rss-description=" ">faculty-job.tmpl</template>
+</template-list>

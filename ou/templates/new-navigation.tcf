@@ -1,0 +1,13 @@
+<title>New Sidebar Navigation</title>
+
+<variable-list>
+	<variable name="root-directory" prompt="Root" type="filechooser" alt="Give the relative path for the directory you want to start the navigation."></variable>
+</variable-list>
+
+<template-list>
+	<template prompt-prefix="New Navigation" group="*inherit*" 
+		preferred-redirect="yes"
+		display-filename="yes" filename="z-nav"
+		extension="pcf"
+		publish="no">new-navigation.tmpl</template>
+</template-list>

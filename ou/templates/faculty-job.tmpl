@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php" ?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+
+	<config>
+ 	<!-- com.omniupdate.properties -->
+		<parameter name="pagetype" type="select" group="Everyone" prompt="Page Type" alt="Please select the desired page type.">
+			<!--%echo encoding="none" var="pagetype" -->
+		</parameter>
+		<parameter name="globalnav" type="select" group="Everyone" prompt="Section Navigation" alt="Select to display the section navigation menu">
+		<!--%echo encoding="none" var="globalnav" -->
+		</parameter>
+ 	<!-- /com.omniupdate.properties -->
+	</config>
+
+	<metadata>
+	<!-- com.omniupdate.properties -->
+		<meta name="keywords" content="<!--%echo var="keywords" -->" />
+		<meta name="description" content="<!--%echo var="description" -->" />
+	<!-- /com.omniupdate.properties -->
+	</metadata>
+
+	<!-- com.omniupdate.properties -->
+	<title>Open Position: <!--%echo var="dept" --></title>
+	<!-- /com.omniupdate.properties -->
+
+	<content>
+	<contentheading>
+		<h2><!-- com.omniupdate.div label="heading" group="Everyone" button="hide" --><!-- com.omniupdate.multiedit prompt="Enter Page Title Here" alt="Enter Page Title Here" type="text" --><!--%echo encoding="none" var="position" --> Position in <!--%echo encoding="none" var="dept" --><!-- /com.omniupdate.div --></h2>
+	</contentheading>
+
+	<maincontent2col>
+<p><span class="p_header">Position:</span><!-- com.omniupdate.div label="title" group="Everyone" button="hide" --><!-- com.omniupdate.multiedit prompt="Posiion" alt="You can change the text of the position here:" type="text" --><!--%echo encoding="none" var="position" --> position<!-- /com.omniupdate.div --></p>
+<p><span class="p_header">Starting date: </span><!-- com.omniupdate.div label="starting-date" group="Everyone" button="hide" --><!-- com.omniupdate.multiedit prompt="Starting Date" alt="Please use Month Day, Year or Month, Year." type="text" -->December 12, 2010<!-- /com.omniupdate.div --></p>
+<p><span class="p_header">Summary:</span></p>
+<!-- com.omniupdate.div label="summary" group="Everyone" button="hide" --><!-- com.omniupdate.multiedit prompt="Position Summary" alt="Enter a position summary" type="textarea" rows="15" editor="yes" -->
+
+<!-- /com.omniupdate.div -->
+<p><span class="p_header">Responsibilities: </span></p>
+<!-- com.omniupdate.div label="responsibilities" group="Everyone" button="hide" --><!-- com.omniupdate.multiedit prompt="Responsibilities" alt="Enter the position's responsibilities" type="textarea" rows="15" editor="yes" -->
+
+<!-- /com.omniupdate.div -->
+<p><span class="p_header">Qualifications:</span></p>
+<!-- com.omniupdate.div label="qualifications" group="Everyone" button="hide" --><!-- com.omniupdate.multiedit prompt="Qualifications" alt="Enter the required qualifications for the position" type="textarea" rows="15" editor="yes" -->
+
+<!-- /com.omniupdate.div -->
+<p><span class="p_header">About the Department:</span></p>
+<!-- com.omniupdate.div label="about-dept" group="Everyone" button="hide" --><!-- com.omniupdate.multiedit prompt="About the Department" alt="Enter the Department description" type="textarea" rows="15" editor="yes" -->
+
+<!-- /com.omniupdate.div -->
+<p><span class="p_header">About Malone University:</span></p>
+<!-- com.omniupdate.div label="about-malone" group="Everyone" button="hide" --><!-- com.omniupdate.multiedit prompt="About Malone University" alt="Update this text as necessary" type="textarea" rows="15" editor="yes" --><p>Malone University is a Christian college for the arts, sciences and professions, in the liberal arts tradition.&nbsp; The University is affiliated with the Evangelical Friends Church-Eastern Region.&nbsp; The students, faculty and staff represent more than 35 denominations.&nbsp; Total  enrollment is approximately 2,600 students with 1,500 undergraduates as  well as adult degree-completion programs and a graduate school offering  4 master's degrees.</p><!-- /com.omniupdate.div -->
+<p><span class="p_header">How to Apply:</span></p>
+<!-- com.omniupdate.div label="apply" group="Everyone" button="hide" --><!-- com.omniupdate.multiedit prompt="Apply" alt="Update this text as necessary, the mailing address information is hard coded" type="textarea" rows="15" editor="yes" --><p>Application materials should include: Letter of application, curriculum  vitae, statement of Christian beliefs, statement of the integration of faith and learning in the academic discipline, statement of teaching philosophy, sample syllabus, summaries of student evaluations, a sample of production work, and the names and contact information of three references.</p><!-- /com.omniupdate.div -->
+<!-- com.omniupdate.div label="mailing-address" group="Everyone" button="hide" --><!-- com.omniupdate.multiedit prompt="Mailing Address" alt="Update this text as necessary" type="textarea" rows="15" editor="yes" --><p><strong>Send application materials to:</strong> <br />
+Dr. Don Tucker, Provost<br />
+Malone University<br />
+2600 Cleveland Ave NW<br />
+Canton OH 44709-3897<br />
+<br />Email to:&nbsp; <a class="mail" rel="facebox" href="/_resources/php/email/email_obfuscation_form.php">provost@malone.edu</a></p><!-- /com.omniupdate.div -->
+
+<p><span class="p_header">Application Deadline:</span></p> 
+<!-- com.omniupdate.div label="closing-date" group="Everyone" button="hide" --><!-- com.omniupdate.multiedit prompt="Closing Date" alt="Please use Month Day, Year or Month, Year or 'Open & Revolving'." type="text" -->October 31, 2010.<!-- /com.omniupdate.div --><br />
+<br />
+<!-- com.omniupdate.div label="eoe-statement" group="Everyone" button="hide" --><!-- com.omniupdate.multiedit type="textarea" prompt="EOE Statement" alt="Update the EOE Statement as necessary" rows="15" editor="yes" --><p class="p_header">EQUAL OPPORTUNITY POLICY</p>
+<p>Malone University has an established policy of equal academic and employment opportunity.&nbsp;&nbsp; This policy is applied to all qualified students, employees and applicants for admission or employment, in all university programs and activities, without unlawful discrimination based on race, color, national origin, religion, sex, age, disability or military or veteran status.</p>
+<p> </p><!-- /com.omniupdate.div -->
+		</maincontent2col>
+	</content>
+
+</document>

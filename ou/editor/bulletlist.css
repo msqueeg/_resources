@@ -1,0 +1,53 @@
+@import url("/_resources/css/main.css");
+
+body{
+  background:#FFF url("/_resources/ou/editor/main-bg.png") no-repeat;
+  margin:357px 78px 3px 278px;
+}
+
+div{
+  border:2px dashed #DDD;
+}
+
+body > ul {
+	float: left;
+	width: 260px;
+	margin-right: 25px;
+}
+
+body > ul > li {
+	background: url(/_resources/images/common/list-bullet.png) 0 5px no-repeat;
+	padding-left: 34px;	
+	margin-bottom: 28px;
+}
+
+ul li h2 a {
+	color: #003e7e;
+	font-size: 183.33%;
+	font-weight: normal;
+	line-height: 1.2;
+	padding-top: 2px;
+	text-decoration: none;
+}
+
+ul li p {
+	margin: 5px 0;
+	font-size: 133.33%;
+	color: #707070;
+	font-family: Georgia, serif;
+}
+
+
+.submenu {
+	border-top: 1px solid #d1d1d1;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+
+.submenu a {
+	color: #40c2f3;
+	display: block;
+	margin: 3px;
+}
+
+br[_mce_bogus]{ display:none; }

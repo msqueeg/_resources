@@ -1,0 +1,20 @@
+<title>New Section</title>
+
+<variable-list>
+	<variable name="dirname" prompt="Directory Name" alt="The folder name for the directory."></variable>
+	<variable name="title" prompt="Page Title" alt="Give your index page a title."></variable>
+	<variable name="sectiontype" prompt="New Section Type" alt="Select the template type for the new section" type="select">
+		<option value="academic-dept">Academic Department</option>
+		<option value="office">Office</option>
+		<option value="overview">Overview</option>
+		<option value="one-column">One Column Page</option>
+	</variable>
+	<variable name="keywords" prompt="Keywords" rows="2" alt="Words that categorize your new index page for search engines.">Some keywords here</variable>
+	<variable name="description" prompt="Description" rows="2" alt="A brief description of the index page content.">Description</variable>
+</variable-list>
+
+<template-list>
+	<template prompt-prefix="index page" group="*inherit*" display-group="no" display-overwrite="no" preferred-redirect="yes" filename="index" extension="pcf" display-filename="no" display-extension="no" force-destination="yes" destination="{directory/}{dirname}" publish="no">section-{sectiontype}.tmpl</template>
+	<template prompt-prefix="navigation" group="*inherit*" display-group="no" display-overwrite="no" preferred-redirect="no"  filename="zz-sidenav" extension="inc" display-filename="no" display-extension="no" force-destination="yes" destination="{directory/}{dirname}" publish="yes">_sidenav.tmpl</template>
+	<template prompt-prefix="breadcrumb" group="*inherit*" display-group="no" display-overwrite="no" preferred-redirect="no" filename="zz-breadcrumb" extension="xml" display-filename="no" display-extension="no" force-destination="yes" destination="{directory/}{dirname}/" publish="yes">_breadcrumb.tmpl</template>
+</template-list>

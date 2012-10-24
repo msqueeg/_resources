@@ -1,0 +1,7 @@
+.caption	Caption	block
+.intro		Intro	block
+.sub-intro	Sub-Intro	block
+.narrower	Narrower (right side)	block
+.promo_green	Promo Green
+.promo_purple	Promo Purple
+.right	Float Right

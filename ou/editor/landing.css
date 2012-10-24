@@ -1,0 +1,48 @@
+@import url("/_resources/css/main.css");
+
+body{
+  background:#FFF url("/_resources/ou/editor/main-bg.png") no-repeat;
+  margin:357px 78px 3px 278px;
+  width:212px;
+}
+
+div{
+  border:2px dashed #DDD;
+}
+
+ul {
+	float: left;
+	width: 99px;
+	font-size: 91.66%;
+}
+
+ul a {
+	color: #40c2f3;
+}
+
+ul li {
+	margin: 9px 0;
+}
+
+ul.right {
+	float: right;
+}
+
+h2 {
+    border-bottom: 1px solid #D1D1D1;
+    padding-bottom: 13px;
+}
+
+h2 a {
+    color: #003E7E;
+    font-size: 183.33%;
+    font-weight: normal;
+    margin: 10px 0 3px;
+}
+
+.more a {
+    color: #40C2F3;
+    display: block;
+    font-size: 116.66%;
+    line-height: 1.2;
+}

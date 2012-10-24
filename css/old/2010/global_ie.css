@@ -1,0 +1,15 @@
+#Nav .level2_ul {
+	display: none;
+	list-style-type: none;
+	padding: 0px;
+	width: 200px;
+	background-color: #86B6E0;
+	position: absolute;
+	top: 26px;
+	left: -10px;
+}
+
+#Rightrail .header_img{
+	margin-bottom: -50px;
+	padding-bottom: 0px;
+}

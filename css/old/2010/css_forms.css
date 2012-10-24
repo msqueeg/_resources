@@ -1,0 +1,23 @@
+.form_element_container{padding:5px 0px;}
+.question_title{font-weight: bold;}
+.question_form_field{}
+.question_form_field .form_input{border:1px solid #639CD5;padding:3px; font-size: 100%; }
+.question_required{color:red;margin-left:2px;}
+.question_submit{
+	font-size: 125%;
+	margin-top:10px;
+	height: 36px;
+	width: 128px;
+	border: 0px;
+	cursor: pointer;
+	text-align:center;
+	color: #FFF;
+	font-weight: 700;
+	background: url(/_resources/images/old/2010/btn_green_back.jpg) no-repeat;
+}
+
+.question_submit_over{
+	background: url(/_resources/images/old/2010/btn_green_over.jpg) no-repeat;
+}
+.question_help_text{font-style:italic;font-size:10px;}
+.question_header{margin-top:15px;}

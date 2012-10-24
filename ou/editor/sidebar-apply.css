@@ -1,0 +1,17 @@
+@import url("/_resources/css/main.css");
+
+body{
+	background:#FFF url("/_resources/ou/editor/ready_apply.png") no-repeat;
+	margin-top:60px;
+	margin-left:25px; 
+	width: 195px;
+}
+strong{
+	font-family: "Helvetica Neue Light","HelveticaNeue-Light",Arial,Helvetica,sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    padding-bottom: 8px;
+}
+a{
+	color: white !important;
+}

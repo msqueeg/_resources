@@ -1,0 +1,57 @@
+@import url("/_resources/css/main.css");
+
+body{
+  background:#FFF url("/_resources/ou/editor/main-bg.png") no-repeat;
+  margin:357px 78px 3px 428px;
+  width:400px;
+}
+
+div{
+  border:2px dashed #DDD;
+}
+
+p {
+    color: #555555;
+    font-size: 116.66%;
+    line-height: 1.43;
+    margin: 16px 0px 16px 0;
+}
+
+.intro {
+    color: #707070;
+    font-family: Georgia,serif;
+    font-size: 158.33%;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.sub-intro {
+    color: #707070;
+    font-size: 116.66%;
+    line-height: 1.4;
+}
+
+.narrower {
+    margin-right: 90px;
+}
+
+h3 {
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, sans-serif;
+	color: #707070;
+	font-size: 133.33%;
+}
+
+h4 {
+	margin: 25px 0 10px;
+	font-size: 116.66%;
+	font-weight: bold;
+	color: black;
+}
+
+h5 {
+	margin: 20px 0 10px;
+	color: #003e7e;
+	font-style: italic;
+	font-size: 116.66%;
+}

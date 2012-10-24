@@ -1,0 +1,2 @@
+.narrow	Narrow (right side)	block
+.narrower	Narrower (right side)	block
