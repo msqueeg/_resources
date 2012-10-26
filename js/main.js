@@ -205,6 +205,32 @@ $(document).ready(function() {
 	Malone_JS.init();
 	
 	$('a[rel*=facebox]').facebox() //facebox for email pop-up form
+	
+	//Track Navigation Links With Analytics on Click
+	$('#navigation  a[href^="/"]').live('click', function(e) {
+		//Create opt_label
+		var aText = $(this).html(); //Link Text
+		var aCategory = $(this).closest("#navigation > ul > li").attr("id"); // Link Category
+		var opt_label = aCategory + " > " + aText;
+		//Create category
+		var pageTitle = $("title").html(); //Page title
+		var location = window.location;
+		var category = location + " > " + pageTitle;
+		//Push Event to Analytics
+		_gaq.push(['_trackEvent', category, 'main-nav', opt_label]);
+	});
+	
+	$('#secondary-navigation  a').live('click', function(e) {
+		//Create opt_label
+		var aText = $(this).html(); //Link Text
+		var opt_label = aText;
+		//Create category
+		var pageTitle = $("title").html(); //Page title
+		var location = window.location;
+		var category = location + " > " + pageTitle;
+		//Push Event to Analytics
+		_gaq.push(['_trackEvent', category, 'main-nav', opt_label]);
+	});
 
 });
 
