@@ -229,7 +229,7 @@ $(document).ready(function() {
 		var location = window.location;
 		var category = location + " > " + pageTitle;
 		//Push Event to Analytics
-		_gaq.push(['_trackEvent', category, 'main-nav', opt_label]);
+		_gaq.push(['_trackEvent', category, 'sec-nav', opt_label]);
 	});
 
 });
