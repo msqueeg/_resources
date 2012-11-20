@@ -1,0 +1,11 @@
+<title>New Vanity URL Redirect</title>
+
+<variable-list>
+	<variable name="url" prompt="Page Title" alt="Give your page a title."></variable>
+	<variable name="campaign" prompt="Page Title" alt="Give your page a title."></variable>
+	<variable name="title" prompt="Page Title" alt="Give your page a title."></variable>
+</variable-list>
+
+<template-list>
+	<template prompt-prefix="New Page" group="*inherit*" extension="pcf" display-extension="no"	publish="no" autonav="{autonavigation}">301-redirect.tmpl</template>
+</template-list>
